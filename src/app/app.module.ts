@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,8 +14,7 @@ import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CollapseModule.forRoot(),
-    BsDropdownModule.forRoot()
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

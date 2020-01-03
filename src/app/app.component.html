@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">Профессионал Юг</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -9,19 +9,45 @@
     <div class="collapse navbar-collapse" id="navbarNav" [collapse]="isCollapsed">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">О нас <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Преимущества</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#">Цены</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Контакты</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<header>
+  <div class="container pt-5 pb-5">
+    <h1>Профессионал Юг</h1>
+    <p class="h4">Бытовая техника и ее обслуживание в Николаеве</p>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <h2 class="text-center">Примущества</h2>
+    <div class="row text-center">
+      <div class="col-lg-4 col-md-4 col-sm-12 pt-5 pb-5">
+        <h4>Преимущество 1</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 pt-5 pb-5">
+        <h4>Преимущество 1</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 pt-5 pb-5">
+        <h4>Преимущество 1</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
 <router-outlet></router-outlet>
