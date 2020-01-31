@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,6 +8,8 @@ import { MainLayoutComponent } from './shared/components/main-layout/main-layout
 import { HomePageComponent } from './home-page/home-page.component';
 import { ServicePageComponent } from './service-page/service-page.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { MaterialModule } from './shared/material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ContactsPageComponent } from './contacts-page/contacts-page.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialModule,
     CollapseModule.forRoot()
   ],
   providers: [],
