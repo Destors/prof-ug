@@ -41,3 +41,7 @@ mat-hint {
 .mat-card {
   border-radius: 10px !important;
 }
+
+.mat-card:hover{
+  box-shadow: -1px 5px 10px 0px rgba(95, 95, 95, 0.8);
+}
