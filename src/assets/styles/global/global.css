@@ -1,6 +1,17 @@
 html {
-  width:100vw;
-  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.bg-primary {
+  background-color: #448aff!important;
+}
+
+.bg-secondary {
+  background-color: rgb(243, 243, 243);
+}
+
+.bg-dark {
+  background-color: rgb(56, 56, 56);
 }
 
 html, body { height: 100%; }

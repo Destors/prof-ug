@@ -1,14 +1,22 @@
-.bg-primary {
-  background-color: #4285f4 !important;
-}
-
 .main-header {
-background-image: url(/assets/img/bag.jpg);
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-padding-top: 200px;
-padding-bottom: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.main-header--text {
+  padding-top: 20vh;
+}
+
+.main-img {
+  margin-top: 5vh;
+  width: 100%;
+  height: auto;
+}
+
+.main-btn {
+  font-size: 20px;
+  padding: 5px 15px;
+  font-weight: 400;
+}
