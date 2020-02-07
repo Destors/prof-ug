@@ -1,15 +1,26 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-service-page',
   templateUrl: './service-page.component.html',
   styleUrls: ['./service-page.component.scss']
 })
-export class ServicePageComponent implements OnInit {
+export class ServicePageComponent {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
-  ngOnInit() {
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
-
 }
+
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: 'dialog-content-example-dialog.html',
+})
+export class DialogContentExampleDialog {}
