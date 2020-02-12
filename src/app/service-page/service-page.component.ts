@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
-import {MatDialog} from '@angular/material/dialog';
+import { Component } from "@angular/core";
+import { MatDialog } from "@angular/material/dialog";
 
 @Component({
-  selector: 'app-service-page',
-  templateUrl: './service-page.component.html',
-  styleUrls: ['./service-page.component.scss']
+  selector: "app-service-page",
+  templateUrl: "./service-page.component.html",
+  styleUrls: ["./service-page.component.scss"]
 })
 export class ServicePageComponent {
-
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
@@ -17,8 +16,8 @@ export class ServicePageComponent {
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'CondBuyDialog',
-  templateUrl: './dialog/cond-buy-dialog.html',
+  selector: "CondBuyDialog",
+  templateUrl: "./dialog/cond-buy-dialog.html"
 })
 // tslint:disable-next-line:component-class-suffix
 export class CondBuyDialog {}

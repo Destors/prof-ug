@@ -3,11 +3,11 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 import { CollapseModule } from "ngx-bootstrap";
 import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
 import { HomePageComponent } from "./home-page/home-page.component";
-
-import { MaterialModule } from "./shared/material.module";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { MaterialModule } from "./shared/material.module";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
+    MatButtonModule,
     CollapseModule.forRoot()
   ],
   providers: [],
