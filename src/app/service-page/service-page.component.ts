@@ -12,6 +12,11 @@ export class ServicePageComponent {
   openDialogBuyCond() {
     const dialogRef = this.dialog.open(CondBuyDialog);
   }
+
+  openDialogInstallCond() {
+    const dialogRef = this.dialog.open(CondInstallDialog);
+  }
+
 }
 
 @Component({
@@ -21,3 +26,11 @@ export class ServicePageComponent {
 })
 // tslint:disable-next-line:component-class-suffix
 export class CondBuyDialog {}
+
+@Component({
+  // tslint:disable-next-line:component-selector
+  selector: "CondInstallDialog",
+  templateUrl: "./dialog/cond-install-dialog.html"
+})
+// tslint:disable-next-line:component-class-suffix
+export class CondInstallDialog {}
