@@ -9,7 +9,7 @@ import { MatDialog } from "@angular/material/dialog";
 export class ServicePageComponent {
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
+  openDialogBuyCond() {
     const dialogRef = this.dialog.open(CondBuyDialog);
   }
 }

@@ -6,24 +6,66 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/buy.jpg"
+            alt="Photo of a Shiba Inu"
+          />
           <div class="card-head">
-            <h5 class="pt-2 pb-3 text-center">
+            <h5 class="pt-2 pb-2">
               <i class="material-icons md-24">
                 shopping_cart
               </i>
               Купить кондиционер
             </h5>
           </div>
+          <hr />
+          <p>
+            Поможем подобрать наиболее подходящую для вас модель, как по
+            мощности так и по бренду.
+          </p>
+          <hr />
+
+          <mat-card-content class="text-success">
+            <h5>Цену уточняйте</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button (click)="openDialogBuyCond()">
+              Подробнее
+            </button>
+            <button mat-raised-button color="primary">
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <mat-card>
           <img
             mat-card-image
-            src="../assets/img/buy.jpg"
+            src="../assets/img/install.jpg"
             alt="Photo of a Shiba Inu"
           />
-          <mat-card-content>
-            <mat-card-content class="text-success">
-              <h5>Цену уточняйте</h5>
-            </mat-card-content>
+          <div class="card-head">
+            <h5 class="pt-2 pb-2">
+              <i class="material-icons md-24">
+                build
+              </i>
+              Установка кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Установка кондиционеров любой сложности, официальная гарантия на
+            выполненые работы.
+          </p>
+          <hr />
+
+          <mat-card-content class="text-success">
+            <h5>от 800грн</h5>
           </mat-card-content>
+
           <div class="d-flex justify-content-between">
             <button mat-raised-button (click)="openDialog()">
               Подробнее

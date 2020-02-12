@@ -1,20 +1,23 @@
 <header class="main-header bg-primary">
-  <div class="container main-header--text text-white text-center">
-    <p>Бытовая техника и её обслуживание</p>
-    <h1 class="main-logo-text">Профессионал Юг город Николаев</h1>
-    <p class="h4 mt-4">Кондиционеры, бойлера, стиральные машины</p>
-    <div
-      class="d-flex justify-content-around flex-wrap col-xl-6 col-12 mt-3 mx-auto"
-    >
-      <button
-        mat-raised-button
-        class="mt-4 main-btn col-12 col-xl-4 col-md-3 col-sm-6"
-        [routerLink]="['/service']"
-      >
-        Услуги
-      </button>
+  <div class="container main-header--text text-white">
+    <div class="d-flex justify-content-between">
+      <div class="col-6">
+        <p>Бытовая техника и её обслуживание</p>
+        <h1 class="main-logo-text">Профессионал Юг</h1>
+        <p class="h4 mt-4">Кондиционеры, бойлера, стиральные машины</p>
+        <button
+          mat-raised-button
+          class="mt-4 main-btn col-12 col-xl-3 col-md-2 col-sm-6"
+          [routerLink]="['/service']"
+        >
+          Услуги
+        </button>
+      </div>
+      <div class="col-6 d-flex justify-content-end">
+          <img height="auto" width="80%" src="/assets/img/air_cond.png" alt="">
+      </div>
     </div>
-    <img src="../assets/img/repair.png" alt="" class="mx-auto main-img" />
+    <!--<img src="../assets/img/repair.png" alt="" class="mx-auto main-img" />-->
   </div>
 </header>
 <main>
@@ -134,8 +137,16 @@
     <div class="d-flex justify-content-around flex-wrap">
       <p>Профессионал Юг 2020</p>
       <h5>prof-ug8@gmail.com</h5>
-      <h5><a href="tel+38 067 81 81 297" class="text-white col-12">+38 067 81 81 297</a></h5>
-      <h5><a href="tel+380638181297" class="text-white col-12">+38 063 81 81 297</a></h5>
+      <h5>
+        <a href="tel+38 067 81 81 297" class="text-white col-12"
+          >+38 067 81 81 297</a
+        >
+      </h5>
+      <h5>
+        <a href="tel+380638181297" class="text-white col-12"
+          >+38 063 81 81 297</a
+        >
+      </h5>
     </div>
   </div>
 </footer>
