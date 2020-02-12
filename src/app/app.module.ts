@@ -8,8 +8,8 @@ import { MainLayoutComponent } from "./shared/components/main-layout/main-layout
 import { HomePageComponent } from "./home-page/home-page.component";
 import {
   ServicePageComponent,
-  DialogContentExampleDialog
-} from "./service-page/service-page.component";
+  CondBuyDialog
+} from './service-page/service-page.component';
 import { ContactsPageComponent } from "./contacts-page/contacts-page.component";
 import { MaterialModule } from "./shared/material.module";
 
@@ -20,9 +20,9 @@ import { MaterialModule } from "./shared/material.module";
     HomePageComponent,
     ServicePageComponent,
     ContactsPageComponent,
-    DialogContentExampleDialog
+    CondBuyDialog
   ],
-  entryComponents: [DialogContentExampleDialog],
+  entryComponents: [CondBuyDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -11,18 +11,14 @@ export class ServicePageComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog() {
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    const dialogRef = this.dialog.open(CondBuyDialog);
   }
 }
 
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'dialog-content-example-dialog',
-  templateUrl: 'dialog-content-example-dialog.html',
+  selector: 'CondBuyDialog',
+  templateUrl: './dialog/cond-buy-dialog.html',
 })
 // tslint:disable-next-line:component-class-suffix
-export class DialogContentExampleDialog {}
+export class CondBuyDialog {}
