@@ -8,15 +8,9 @@ import { CollapseModule } from "ngx-bootstrap";
 import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { MatButtonModule } from "@angular/material/button";
-import { ContactsPageComponent } from "./contacts-page/contacts-page.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainLayoutComponent,
-    HomePageComponent,
-    ContactsPageComponent
-  ],
+  declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

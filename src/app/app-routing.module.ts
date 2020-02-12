@@ -13,7 +13,11 @@ const routes: Routes = [
       {
         path: "service",
         loadChildren: "./service-page/service-page.module#ServicePageModule"
-      }
+      },
+      {
+        path: "contacts",
+        loadChildren: "./contacts-page/contacts-page.module#ContactsPageModule"
+      },
     ]
   }
 ];
