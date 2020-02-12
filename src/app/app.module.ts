@@ -6,11 +6,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CollapseModule } from "ngx-bootstrap";
 import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
 import { HomePageComponent } from "./home-page/home-page.component";
-import {
-  ServicePageComponent,
-  CondBuyDialog
-} from './service-page/service-page.component';
-import { ContactsPageComponent } from "./contacts-page/contacts-page.component";
+
 import { MaterialModule } from "./shared/material.module";
 
 @NgModule({
@@ -18,11 +14,7 @@ import { MaterialModule } from "./shared/material.module";
     AppComponent,
     MainLayoutComponent,
     HomePageComponent,
-    ServicePageComponent,
-    ContactsPageComponent,
-    CondBuyDialog
   ],
-  entryComponents: [CondBuyDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,
