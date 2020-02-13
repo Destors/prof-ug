@@ -1,20 +1,28 @@
 <header class="main-header">
-  <div class="container main-header--text text-white">
-    <div class="d-flex justify-content-between">
-      <div class="col-6">
-        <p>Бытовая техника и её обслуживание</p>
-        <h1 class="main-logo-text">Профессионал Юг</h1>
-        <p class="h4 mt-4">Кондиционеры, бойлера, стиральные машины</p>
-        <button
-          mat-raised-button
-          class="mt-4 main-btn col-12 col-xl-3 col-md-2 col-sm-6"
-          [routerLink]="['/service']"
-        >
-          Услуги
-        </button>
+  <div class="container vh-100 d-flex align-items-center">
+    <div class="d-flex justify-content-between align-items-center flex-wrap col-12">
+      <div class="col-12 col-md-6 d-flex align-items-center">
+        <div class="mt-5">
+          <p class="mt-5">Бытовая техника и её обслуживание</p>
+          <h1 class="main-logo-text">Профессионал Юг</h1>
+          <p class="h4 mt-4">Кондиционеры, бойлера, стиральные машины</p>
+          <button
+            mat-raised-button
+            class="mt-4 main-btn col-12 col-xl-3 col-md-2 col-sm-6"
+            [routerLink]="['/service']"
+            color="primary"
+          >
+            Услуги
+          </button>
+        </div>
       </div>
-      <div class="col-6 d-flex justify-content-end">
-          <!--<img height="auto" width="80%" src="/assets/img/air_cond.png" alt="">-->
+      <div class="col-12 col-md-6 d-flex justify-content-end mt-5">
+        <img
+          height="auto"
+          width="100%"
+          src="/assets/img/cond_main.svg"
+          alt=""
+        />
       </div>
     </div>
     <!--<img src="../assets/img/repair.png" alt="" class="mx-auto main-img" />-->
@@ -76,7 +84,7 @@
       </div>
     </div>
   </section>
-  <hr>
+  <hr />
   <section class="container mt-5 pt-5">
     <h1 class="text-center">О нас</h1>
 
