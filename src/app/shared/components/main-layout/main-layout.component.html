@@ -13,6 +13,8 @@
       <path d="M0 0h24v24H0z" fill="none" />
     </svg>
     <a class="navbar-brand" href="#">Профессионал Юг</a>
+    <h5 class="mr-3 navbar-line d-none d-md-block">|</h5>
+    <h5 class="text-secondary p-0 m-0 d-none d-md-block">Кондиционеры в николаеве</h5>
     <button
       class="navbar-toggler"
       type="button"
@@ -36,13 +38,13 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
-          <a class="nav-link" [routerLink]="['']" (click)="isCollapsed = true"
+          <a class="nav-link mx-2" [routerLink]="['']" (click)="isCollapsed = true"
             >Главная</a
           >
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a
-            class="nav-link"
+            class="nav-link mx-2"
             [routerLink]="['/service']"
             (click)="isCollapsed = true"
             >Услуги</a
@@ -50,7 +52,7 @@
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a
-            class="nav-link"
+            class="nav-link mx-2"
             [routerLink]="['/contacts']"
             (click)="isCollapsed = true"
             >Контакты</a
