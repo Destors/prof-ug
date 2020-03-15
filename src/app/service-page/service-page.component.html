@@ -34,7 +34,11 @@
             <button mat-raised-button (click)="openDialogBuyCond()">
               Подробнее
             </button>
-            <button mat-raised-button color="primary" [routerLink]="['/contacts']">
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
               Заказать
             </button>
           </div>
@@ -70,7 +74,51 @@
             <button mat-raised-button (click)="openDialogInstallCond()">
               Подробнее
             </button>
-            <button mat-raised-button color="primary" [routerLink]="['/contacts']">
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/clean.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <div class="card-head">
+            <h5 class="pt-2 pb-2">
+              <i class="material-icons md-24">
+                event_available
+              </i>
+              Профилактика кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Установка кондиционеров любой сложности, официальная гарантия на
+            выполненые работы.
+          </p>
+          <hr />
+
+          <mat-card-content class="text-success">
+            <h5>от 400грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button (click)="openDialogInstallCond()">
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
               Заказать
             </button>
           </div>
