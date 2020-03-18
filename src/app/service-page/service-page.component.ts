@@ -16,8 +16,18 @@ export class ServicePageComponent {
   openDialogInstallCond() {
     const dialogRef = this.dialog.open(CondInstallDialog);
   }
-
+  openDialogCleanCond() {
+    const dialogRef = this.dialog.open(CondCleanDialog);
+  }
 }
+
+@Component({
+  // tslint:disable-next-line:component-selector
+  selector: "CondCleanDialog",
+  templateUrl: "./dialog/cond-clean-dialog.html"
+})
+// tslint:disable-next-line:component-class-suffix
+export class CondCleanDialog {}
 
 @Component({
   // tslint:disable-next-line:component-selector

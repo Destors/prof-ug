@@ -1,12 +1,22 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
-import { ServicePageComponent, CondBuyDialog, CondInstallDialog } from "./service-page.component";
+import {
+  ServicePageComponent,
+  CondBuyDialog,
+  CondInstallDialog,
+  CondCleanDialog
+} from "./service-page.component";
 import { MaterialModule } from "../shared/material.module";
 
 @NgModule({
-  declarations: [ServicePageComponent, CondBuyDialog, CondInstallDialog],
-  entryComponents: [CondBuyDialog, CondInstallDialog],
+  declarations: [
+    ServicePageComponent,
+    CondBuyDialog,
+    CondInstallDialog,
+    CondCleanDialog
+  ],
+  entryComponents: [CondBuyDialog, CondInstallDialog, CondCleanDialog],
   imports: [
     CommonModule,
     MaterialModule,
