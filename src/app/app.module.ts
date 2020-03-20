@@ -3,11 +3,12 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
-import { CollapseModule } from "ngx-bootstrap";
 import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
 import { HomePageComponent } from "./home-page/home-page.component";
 import { MatButtonModule } from "@angular/material/button";
+import { CollapseModule } from "ngx-bootstrap";
+import { CarouselModule } from "ngx-bootstrap/carousel";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
@@ -16,7 +17,9 @@ import { MatButtonModule } from "@angular/material/button";
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    CollapseModule.forRoot()
+    MatIconModule,
+    CollapseModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

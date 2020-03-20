@@ -1,9 +1,9 @@
 html {
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 .bg-primary {
-  background-color: #448aff!important;
+  background-color: #448aff !important;
 }
 
 .bg-secondary {
@@ -15,7 +15,7 @@ html {
 }
 
 .bg-light {
-  background-color: #f8f9fa!important;
+  background-color: #f8f9fa !important;
 }
 
 .bg-white {
@@ -26,5 +26,15 @@ html {
   min-height: 100vh;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sr-only {
+  display: none !important;
+}
