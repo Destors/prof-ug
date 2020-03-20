@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>Профессионал Юг</title>
     <base href="/" />
+    <meta
+      name="google-site-verification"
+      content="rKfkwFSI9iThkZS-qQWol-9lgoyPobmNHsPlaGjLMic"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
@@ -32,5 +36,11 @@
   </head>
   <body>
     <app-root></app-root>
+    <script src="/__/firebase/7.12.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.12.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script>
+      firebase.analytics().logEvent("notification_received");
+    </script>
   </body>
 </html>
