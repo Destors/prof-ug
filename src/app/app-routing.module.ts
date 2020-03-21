@@ -12,20 +12,28 @@ const routes: Routes = [
       { path: "", component: HomePageComponent },
       {
         path: "service",
-        loadChildren: "./service-page/service-page.module#ServicePageModule"
+        loadChildren: () =>
+          import("./service-page/service-page.module").then(
+            m => m.ServicePageModule
+          )
       },
       {
         path: "contacts",
-        loadChildren: "./contacts-page/contacts-page.module#ContactsPageModule"
-      },
+        loadChildren: () =>
+          import("./contacts-page/contacts-page.module").then(
+            m => m.ContactsPageModule
+          )
+      }
     ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules
-  })],
+  imports: [
+    RouterModule.forRoot(routes, {
+      preloadingStrategy: PreloadAllModules
+    })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
