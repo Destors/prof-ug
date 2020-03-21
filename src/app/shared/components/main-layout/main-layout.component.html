@@ -32,9 +32,9 @@
       id="navbarNav"
       [collapse]="isCollapsed"
     >
-      <ul class="navbar-nav justify-content-end">
+      <ul class="navbar-nav justify-content-end mt-3 mt-md-0">
         <li
-          class="nav-item"
+          class="nav-item text-center mb-3 mb-md-0"
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
@@ -44,7 +44,7 @@
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a
-            class="nav-link mx-2"
+            class="nav-link mx-2 text-center mb-3 mb-md-0"
             [routerLink]="['/service']"
             (click)="isCollapsed = true"
             >Услуги</a
@@ -52,7 +52,7 @@
         </li>
         <li class="nav-item" routerLinkActive="active">
           <a
-            class="nav-link mx-2"
+            class="nav-link mx-2 text-center mb-3 mb-md-0"
             [routerLink]="['/contacts']"
             (click)="isCollapsed = true"
             >Контакты</a
