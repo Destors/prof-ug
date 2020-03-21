@@ -4,7 +4,7 @@
   </div>
   <div class="container pt-5">
     <div class="row">
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
           <img
             mat-card-image
@@ -41,7 +41,7 @@
           </div>
         </mat-card>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
           <img
             mat-card-image
@@ -78,7 +78,7 @@
           </div>
         </mat-card>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
           <img
             mat-card-image
@@ -114,82 +114,106 @@
           </div>
         </mat-card>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
-          <div class="card-head">
-            <h5 class="pt-2 pb-3 text-center">
-              Заправка фреоном
-            </h5>
-          </div>
           <img
             mat-card-image
             src="../assets/img/freon.jpeg"
             alt="Photo of a Shiba Inu"
           />
-          <mat-card-content>
-            <mat-card-content class="text-success">
-              <h5>от 100 грн</h5>
-            </mat-card-content>
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Заправка фреоном
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Заправить кондиционер фреоном в городе Николаев, можно с помощью вызова нашего специалиста.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 100 грн</h5>
           </mat-card-content>
+
           <div class="d-flex justify-content-between">
             <button mat-raised-button disabled>
               Подробнее
             </button>
-            <button mat-raised-button color="primary">
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
               Заказать
             </button>
           </div>
         </mat-card>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
-          <div class="card-head">
-            <h5 class="pt-2 pb-3 text-center">
-              Ремонт кондиционера
-            </h5>
-          </div>
           <img
             mat-card-image
             src="../assets/img/repair.jpg"
             alt="Photo of a Shiba Inu"
           />
-          <mat-card-content>
-            <mat-card-content class="text-success">
-              <h5>от 250 грн</h5>
-            </mat-card-content>
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Ремонт кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Выполняем ремонт кондиционеров в городе Николаев абсолютно любого уровня и сложности.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 250 грн</h5>
           </mat-card-content>
+
           <div class="d-flex justify-content-between">
             <button mat-raised-button disabled>
               Подробнее
             </button>
-            <button mat-raised-button color="primary">
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
               Заказать
             </button>
           </div>
         </mat-card>
       </div>
-      <div class="col-lg-4 mb-4">
+      <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
-          <div class="card-head">
-            <h5 class="pt-2 pb-3 text-center">
-              Демонтаж кондиционера
-            </h5>
-          </div>
           <img
             mat-card-image
             src="../assets/img/re-instal.jpg"
             alt="Photo of a Shiba Inu"
           />
-          <mat-card-content>
-            <mat-card-content class="text-success">
-              <h5>от 600 грн</h5>
-            </mat-card-content>
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Демонтаж кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Поможем снять кондиционер, с соблюдением всех правил демонтажа, - повторная заправка не потребуется.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 600 грн</h5>
           </mat-card-content>
+
           <div class="d-flex justify-content-between">
             <button mat-raised-button disabled>
               Подробнее
             </button>
-            <button mat-raised-button color="primary">
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
               Заказать
             </button>
           </div>
