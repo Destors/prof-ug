@@ -13,7 +13,7 @@ import { MatIconModule } from "@angular/material/icon";
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
