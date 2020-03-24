@@ -7,19 +7,17 @@ import { MainLayoutComponent } from "./shared/components/main-layout/main-layout
 import { HomePageComponent } from "./home-page/home-page.component";
 import { MatButtonModule } from "@angular/material/button";
 import { CollapseModule } from "ngx-bootstrap";
-import { CarouselModule } from "ngx-bootstrap/carousel";
 import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: "serverApp" }),
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
     CollapseModule.forRoot(),
-    CarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

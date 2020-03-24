@@ -61,8 +61,8 @@
   <section class="pt-4 pb-4 bg-primary text-white" id="second">
     <div class="container">
       <h2 class="text-center mt-5">Как работает Профессионал Юг</h2>
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
+      <ol class="row text-center">
+        <li class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -71,8 +71,8 @@
           >
           <h4 class="mt-4 mb-3">Звонок</h4>
           <p>Подберем оптимальную для Вас модель кондицинера</p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
+        </li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -81,8 +81,8 @@
           >
           <h4 class="mt-4 mb-3">Доставка</h4>
           <p>Бесплатная доставка по Николаеву</p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
+        </li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -91,8 +91,8 @@
           >
           <h4 class="mt-4 mb-3">Установка</h4>
           <p>Устанавливаем кондиционер под ключ за 2 часа</p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
+        </li>
+        <li class="col-lg-3 col-md-4 col-sm-6 col-12 pt-5 pb-5">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -101,87 +101,69 @@
           >
           <h4 class="mt-4 mb-3">Оплата</h4>
           <p>Оплата производится по факту окончания установки</p>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
   <section class="container mt-5 pt-5">
     <h1 class="text-center">О нас</h1>
-
-    <div class="row align-items-center mt-5 mb-5">
-      <div class="col-lg-6">
-        <h3 class="mb-3">Только профессионалы</h3>
-        <p>
-          Все сотрудники проходят чательный отбор и подготовку.
-        </p>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img
-          src="../assets/img/undraw_QA_engineers_dg5p.svg"
-          width="70%"
-          height="auto"
-          alt=""
-        />
-      </div>
-    </div>
-
-    <div class="row align-items-center mt-5">
-      <div class="col-lg-6 text-center">
-        <img
-          src="../assets/img/undraw_house_searching_n8mp.svg"
-          width="70%"
-          height="auto"
-          alt=""
-        />
-      </div>
-      <div class="col-lg-6 mt-3 order-first order-lg-12">
-        <h3 class="mb-3">Заботимся о вашем комфорте</h3>
-        <p>
-          Используем самые инновационные и провереные решения на рынке бытовой
-          техники.
-        </p>
-      </div>
-    </div>
-
-    <div class="row align-items-center mt-5 mb-5">
-      <div class="col-lg-6">
-        <h3 class="mb-3">Гениальность в деталях</h3>
-        <p>
-          Проявляем внимание к каждой мелочи.
-        </p>
-      </div>
-      <div class="col-lg-6 text-center">
-        <img
-          src="../assets/img/undraw_building_blocks_n0nc.svg"
-          width="70%"
-          height="auto"
-          alt=""
-        />
-      </div>
-    </div>
-  </section>
-  <section class="d-none d-sm-block">
-    <carousel
-      [itemsPerSlide]="itemsPerSlide"
-      [singleSlideOffset]="singleSlideOffset"
-      [noWrap]="!noWrap"
-      [interval]="false"
-      [startFromIndex]="5"
-      (slideRangeChange)="onSlideRangeChange($event)"
-    >
-      <slide *ngFor="let slide of slides; let index = index">
-        <img
-          [src]="slide.image"
-          alt="image slide"
-          style="display: block; width: 100%;"
-        />
-      </slide>
-    </carousel>
+    <ul>
+      <li class="row align-items-center mt-5">
+        <div class="col-lg-6">
+          <h3 class="mb-3">Только профессионалы</h3>
+          <p>
+            Все сотрудники проходят чательный отбор и подготовку.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="../assets/img/undraw_QA_engineers_dg5p.svg"
+            width="70%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </li>
+      <li class="row align-items-center mt-5">
+        <div class="col-lg-6 text-center">
+          <img
+            src="../assets/img/undraw_house_searching_n8mp.svg"
+            width="70%"
+            height="auto"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6 mt-3 order-first order-lg-12">
+          <h3 class="mb-3">Заботимся о вашем комфорте</h3>
+          <p>
+            Используем самые инновационные и провереные решения на рынке бытовой
+            техники.
+          </p>
+        </div>
+      </li>
+      <li class="row align-items-center mt-5">
+        <div class="col-lg-6">
+          <h3 class="mb-3">Гениальность в деталях</h3>
+          <p>
+            Проявляем внимание к каждой мелочи.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="../assets/img/undraw_building_blocks_n0nc.svg"
+            width="70%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </li>
+    </ul>
   </section>
   <section class="mt-5 pb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+    <hr />
+    <div class="container pt-4">
+      <ul class="row">
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -198,8 +180,9 @@
           <p>
             За эти годы мы набрались колоссального опыта и готовы его применять.
           </p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+        </li>
+
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -216,8 +199,9 @@
             Больше не нужно переживать за доставку, оплату, и бракованный товар
             - мы позаботимся об этом за Вас.
           </p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+        </li>
+
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -234,8 +218,9 @@
             Берем на себя полную <b>ответственность</b> за сохранность
             кондиционера во время доставки.
           </p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+        </li>
+
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -252,8 +237,9 @@
             Монтаж кондиционера будет произведен с <b>выполнением</b> всех
             гарантийных правил.
           </p>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+        </li>
+
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -272,9 +258,9 @@
             При покупке у нас, вы получаете полностью
             <b>официальную</b> гарантию на кондиционер от производителя.
           </p>
-        </div>
+        </li>
 
-        <div class="col-lg-4 col-md-4 col-sm-6 col-12 pt-4 pb-4">
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
           <mat-icon
             aria-hidden="false"
             aria-label="Example home icon"
@@ -291,8 +277,8 @@
             По факту выполнения услуги, Вам будет предоставлен
             <b>акт</b> выполненных работ.
           </p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="mb-4">

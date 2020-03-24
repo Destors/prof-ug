@@ -38,3 +38,7 @@ body {
 .sr-only {
   display: none !important;
 }
+
+ol, ul {
+  list-style: none;
+}
