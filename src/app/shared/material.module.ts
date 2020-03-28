@@ -12,14 +12,14 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     MatIconModule,
     MatCardModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ],
   exports: [
     MatButtonModule,
     MatIconModule,
     MatCardModule,
     MatDialogModule,
-    MatSnackBarModule
+    MatSnackBarModule,
   ]
 })
 export class MaterialModule {}

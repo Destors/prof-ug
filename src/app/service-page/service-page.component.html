@@ -73,7 +73,7 @@
               mat-raised-button
               color="primary"
               [routerLink]="['/contacts']"
-              (click)="openSnackBar('Нужно установить кондиционер? Позвоните, и мы приедем через 30 мин.', 'Но это не точно=)')"
+              (click)="openSnackBar('Нужно установить кондиционер? Позвоните, и мы приедем через 60 мин.', 'ок')"
             >
               Заказать
             </button>
@@ -110,6 +110,7 @@
               mat-raised-button
               color="primary"
               [routerLink]="['/contacts']"
+              (click)="openSnackBar('Сделаем полную профилактику кондиционера за 40 - 60 мин.', 'ок')"
             >
               Заказать
             </button>
