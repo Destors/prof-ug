@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
+import { MatSnackBar } from "@angular/material";
 
 @Component({
   selector: "app-service-page",
@@ -7,7 +8,13 @@ import { MatDialog } from "@angular/material/dialog";
   styleUrls: ["./service-page.component.scss"]
 })
 export class ServicePageComponent {
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private snackBar: MatSnackBar) {}
+
+  openSnackBar(message: string, action: string) {
+    this.snackBar.open(message, action, {
+      duration: 6000,
+    });
+  }
 
   openDialogBuyCond() {
     const dialogRef = this.dialog.open(CondBuyDialog);
