@@ -38,9 +38,9 @@ export class ServicePageComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle(this.title);
     // tslint:disable-next-line:max-line-length
-    this.meta.updateTag({name: "keywords", content: "Купить кондиционер, ремонт кондиционера, чистка кондициоенра, профилактика кондиционера."});
+    this.meta.updateTag({name: "keywords", content: "ремонт кондиционера, чистка кондициоенра, профилактика кондиционера,купить бойлер Николаев, установить бойлер, установка бойлеров, чистка бойлера, купить стиральную машину, ремонт стиральных машин"});
     // tslint:disable-next-line:max-line-length
-    this.meta.updateTag({name: "description", content: "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы."});
+    this.meta.updateTag({name: "description", content: "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы. Чистка и профилактика кондиционеров а также, стиральных машин и бойлеров в городе Николаев"});
   }
 }
 
