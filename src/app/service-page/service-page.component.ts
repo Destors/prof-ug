@@ -9,7 +9,7 @@ import { Title, Meta } from "@angular/platform-browser";
   styleUrls: ["./service-page.component.scss"]
 })
 export class ServicePageComponent implements OnInit {
-  title = "Услуги ЧП Профессионал Юг";
+  title = "Услуги Профессионал Юг";
 
   constructor(
     public dialog: MatDialog,
