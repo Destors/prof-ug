@@ -8,6 +8,7 @@ import { HomePageComponent } from "./home-page/home-page.component";
 import { MatButtonModule } from "@angular/material/button";
 import { CollapseModule } from "ngx-bootstrap";
 import { MatIconModule } from "@angular/material/icon";
+import { ScrollTopService } from "./services/scrolltop.service";
 
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
@@ -19,7 +20,7 @@ import { MatIconModule } from "@angular/material/icon";
     MatIconModule,
     CollapseModule.forRoot(),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ScrollTopService],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
