@@ -27,8 +27,12 @@
         />
       </div>
     </div>
-    <a class="mouse-btn d-none d-md-block" href="#second"
-      ><svg
+    <button
+      mat-icon-button
+      class="mouse-btn d-none d-md-block"
+      (click)="scroll(second)"
+    >
+      <svg
         width="38"
         height="55"
         viewBox="0 0 38 55"
@@ -54,11 +58,11 @@
           stroke-linecap="round"
         />
       </svg>
-    </a>
+    </button>
   </div>
 </header>
 <main>
-  <section class="pt-4 pb-4 bg-primary text-white" id="second">
+  <section class="pt-4 pb-4 bg-primary text-white" id="second" #second>
     <div class="container">
       <h2 class="text-center mt-5">Как работает Профессионал Юг</h2>
       <ol class="row text-center">
@@ -451,17 +455,20 @@
     <div class="d-flex justify-content-around flex-wrap">
       <p>Профессионал Юг 2020</p>
       <h5 class="mb-4 mb-md-0">
-        <a href="mailto:profug8@gmail.com" class="text-white col-12"
+        <a
+          href="mailto:profug8@gmail.com"
+          rel="nofollow"
+          class="text-white col-12"
           >profug8@gmail.com</a
         >
       </h5>
       <h5 class="mb-4 mb-md-0">
-        <a href="tel:+380677682273" class="text-white col-12"
+        <a href="tel:+380677682273" rel="nofollow" class="text-white col-12"
           >+38 067 768 22 73</a
         >
       </h5>
       <h5 class="mb-4 mb-md-0">
-        <a href="tel:+380638181297" class="text-white col-12"
+        <a href="tel:+380638181297" rel="nofollow" class="text-white col-12"
           >+38 063 81 81 297</a
         >
       </h5>
