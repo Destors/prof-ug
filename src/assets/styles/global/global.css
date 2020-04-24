@@ -1,0 +1,46 @@
+html {
+  overflow-y: scroll;
+}
+
+.bg-primary {
+  background-color: #448aff !important;
+}
+
+.bg-secondary {
+  background-color: rgb(243, 243, 243);
+}
+
+.bg-dark {
+  background-color: rgb(56, 56, 56);
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sr-only {
+  display: none !important;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

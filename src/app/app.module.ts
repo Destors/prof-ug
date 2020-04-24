@@ -1,30 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CollapseModule } from 'ngx-bootstrap';
-import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { ServicePageComponent } from './service-page/service-page.component';
-import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
+import { HomePageComponent } from "./home-page/home-page.component";
+import { MatButtonModule } from "@angular/material/button";
+import { CollapseModule } from "ngx-bootstrap";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainLayoutComponent,
-    HomePageComponent,
-    ServicePageComponent,
-    ContactsPageComponent
-  ],
+  declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: "serverApp" }),
     AppRoutingModule,
     BrowserAnimationsModule,
-    CollapseModule.forRoot()
+    MatButtonModule,
+    MatIconModule,
+    CollapseModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

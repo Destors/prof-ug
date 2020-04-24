@@ -1,0 +1,48 @@
+<h2 class="text-center mb-3">Купить кондиционер</h2>
+<mat-dialog-content class="mat-typography">
+  <h3 class="text-center">
+    Продаем кондиционеры <b>любой</b> марки и мощности.
+  </h3>
+  <div class="conteiner">
+    <div class="row mt-5">
+      <div class="col-xl-4 text-center mb-4">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          class="md-48 mb-4 text-success"
+        >
+          verified_user
+        </mat-icon>
+        <h3><b>Гарантия</b></h3>
+        <p>Официальная <b>гарантия</b> от производителя 12 месяцев</p>
+      </div>
+      <div class="col-xl-4 text-center mb-4">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          class="md-48 mb-4 text-success"
+        >
+          perm_phone_msg
+        </mat-icon>
+        <h3><b>Консультация</b></h3>
+        <p>Поможем подобрать <b>оптимальную</b> модель для любых условий</p>
+      </div>
+      <div class="col-xl-4 text-center mb-4">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          class="md-48 mb-4 text-success"
+        >
+          location_on
+        </mat-icon>
+
+        <h3><b>Доставка</b></h3>
+        <p><b>Бесплатная</b> доставка по Николаеву</p>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end" class="mb-1">
+  <button mat-button mat-dialog-close>Отмена</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial [routerLink]="['/contacts']">Заказать</button>
+</mat-dialog-actions>

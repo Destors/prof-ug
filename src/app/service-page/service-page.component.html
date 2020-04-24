@@ -1,36 +1,366 @@
-<section class="container mt-5">
-  <h1 class="text-center mb-3">Наши услуги</h1>
-  <p class="h5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem iste temporibus sed
-    porro harum pariatur excepturi aliquam nobis quasi amet.</p>
-  <h3 class="text-center mt-5 mb-5">Кондиционеры</h3>
-  <div class="card-deck">
-    <div class="card mb-4">
-      <img class="card-img-top" src="assets/img/install.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Установка кондиционера</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary" [routerLink]="['/contacts']">Заказать</a>
+<section class="bg-light">
+  <div class="service-bg mb-3">
+    <h1 class="text-center text-white pt-5">Кондиционеры</h1>
+  </div>
+  <div class="container pt-5 pb-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/buy.jpg"
+            alt="Купить кондиционер в Николаеве"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Купить кондиционер
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Поможем подобрать наиболее подходящую для вас модель, как по
+            мощности так и по бренду.
+          </p>
+          <hr />
+
+          <mat-card-content class="text-success">
+            <h5>Цену уточняйте</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button (click)="openDialogBuyCond()">
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+              (click)="openSnackBar('Подберем оптимальную для Вас модель кондиционера, и доставим в течении дня', 'ок')"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
       </div>
-    </div>
-    <div class="card mb-4">
-      <img class="card-img-top" src="assets/img/clean.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Профилактика кондиционера</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary" [routerLink]="['/contacts']">Заказать</a>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/install.jpg"
+            alt="Установка и монтаж кондиционера в Николаеве"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Установить кондиционер
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Установка кондиционеров любой сложности, официальная гарантия на
+            выполненые работы.
+          </p>
+          <hr />
+
+          <mat-card-content class="text-success">
+            <h5>от 1200 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button (click)="openDialogInstallCond()">
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+              (click)="openSnackBar('Нужно установить кондиционер? Позвоните, и мы приедем через 60 мин.', 'ок')"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
       </div>
-    </div>
-    <div class="card mb-4">
-      <img class="card-img-top" src="assets/img/freon.jpeg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Заправка фреоном</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-        <a href="#" class="btn btn-primary" [routerLink]="['/contacts']">Заказать</a>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/clean.jpg"
+            alt="Чистка кондиционера Николаев"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Чистка кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Полная профилактика и чистка кондиционера, любой сложности в городе
+            Николаеве.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 450 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button (click)="openDialogCleanCond()">
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+              (click)="openSnackBar('Сделаем полную профилактику кондиционера за 40 - 60 мин.', 'ок')"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/freon.jpeg"
+            alt="Запривить кондицинер в николаеве"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Заправка фреоном
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Заправить кондиционер фреоном в городе Николаев, можно с помощью
+            вызова нашего специалиста.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 100 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/repair.jpg"
+            alt="Ремонт кондиционера Николаев"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Ремонт кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Выполняем ремонт кондиционеров в городе Николаев абсолютно любого
+            уровня и сложности.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 250 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/re-instal.jpg"
+            alt="Демонаж кондиционера Николаев"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Демонтаж кондиционера
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Поможем снять кондиционер, с соблюдением всех правил демонтажа, -
+            повторная заправка не потребуется.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 600 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
       </div>
     </div>
   </div>
 </section>
+<section class="bg-light pb-2">
+  <div class="service-bg mb-4">
+    <h1 class="text-center text-white">Бойлера</h1>
+  </div>
+  <div class="container pt-5 pb-4">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/boiler/boiler_buy.jpg"
+            alt="Купить бойлер Николаев"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Купить бойлер<span class="d-none">в Николаеве</span>
+            </h5>
+          </div>
+          <hr />
+          <p>
+            У нас вы можете купить бойлер в Николаеве с бесплатной доставкой на
+            дом.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>Цену уточняйте</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/boiler/boiler_instal.jpg"
+            alt="Установить бойлер в Николаеве"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Установить бойлер<span class="d-none">в Николаеве</span>
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Монтаж бойлеров на высшем уровне, с применением только проверенных
+            комплектующих.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 450 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/boiler/boiler_clean.jpg"
+            alt="Чистка бойлера Николаев"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">
+              Чистка бойлера<span class="d-none">в Николаеве</span>
+            </h5>
+          </div>
+          <hr />
+          <p>
+            Чистка и профилактика бойлера, при необходимости замена
+            нагревательного элемента.
+          </p>
+          <hr />
+          <mat-card-content class="text-success">
+            <h5>от 600 грн</h5>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button disabled>
+              Подробнее
+            </button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark">
+  <div class="container text-white pt-3 pb-2">
+    <div class="d-flex justify-content-around flex-wrap">
+      <p>Профессионал Юг 2020</p>
+      <h5>prof-ug8@gmail.com</h5>
+      <h5>
+        <a href="tel+38 067 81 81 297" class="text-white col-12"
+          >+38 067 81 81 297</a
+        >
+      </h5>
+      <h5>
+        <a href="tel+380638181297" class="text-white col-12"
+          >+38 063 81 81 297</a
+        >
+      </h5>
+    </div>
+  </div>
+</footer>
 <router-outlet></router-outlet>

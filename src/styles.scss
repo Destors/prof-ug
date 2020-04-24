@@ -1,5 +1,15 @@
-html {
-  width:100vw;
-  overflow-x:hidden;
-}
+@import "./assets/styles/global/global.css";
+@import "./assets/styles/global/material/custom-theme.scss";
+//bootstrap -- start
+@import "../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/type";
 
+@import "../node_modules/bootstrap/scss/utilities/spacing";
+@import "../node_modules/bootstrap/scss/utilities/text";
+@import "../node_modules/bootstrap/scss/utilities/position";
+@import "../node_modules/bootstrap/scss/utilities/text";
+
+//bootstrap -- end

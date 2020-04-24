@@ -1,0 +1,63 @@
+@import "~@angular/material/theming";
+@include mat-core();
+$custom-theme-primary: mat-palette($mat-blue, A200);
+$custom-theme-accent: mat-palette($mat-green, 600);
+$custom-theme-warn: mat-palette($mat-red);
+$custom-theme: mat-light-theme(
+  $custom-theme-primary,
+  $custom-theme-accent,
+  $custom-theme-warn
+);
+@include angular-material-theme($custom-theme);
+
+.mat-checkbox-layout {
+  white-space: normal !important;
+}
+
+mat-form-field.mat-form-field {
+  font-size: 15px;
+}
+
+mat-hint {
+  font-size: 13px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+.material-icons {
+  vertical-align: bottom;
+}
+
+.mat-card:hover {
+  box-shadow: -1px 5px 10px 0px rgba(95, 95, 95, 0.8);
+}
+
+.mat-icon {
+  width: auto !important;
+  height: auto !important;
+}
+
+@media (max-width: 599px) {
+  // modal dailogs should be able to fill the fullscreen if required
+  .cdk-overlay-pane {
+    max-width: 90vw !important;
+    max-height: 80vh !important;
+  }
+  .cdk-overlay-container {
+    top: 20px;
+  }
+}
+
+.mat-tooltip {
+  font-size: 12px !important;
+}
