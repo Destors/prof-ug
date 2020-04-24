@@ -5,28 +5,30 @@ import {
   ServicePageComponent,
   CondBuyDialog,
   CondInstallDialog,
-  CondCleanDialog
+  CondCleanDialog,
 } from "./service-page.component";
 import { MaterialModule } from "../shared/material.module";
+import { SharedModule } from "../shared/shared.module";
 
 @NgModule({
   declarations: [
     ServicePageComponent,
     CondBuyDialog,
     CondInstallDialog,
-    CondCleanDialog
+    CondCleanDialog,
   ],
   entryComponents: [CondBuyDialog, CondInstallDialog, CondCleanDialog],
   imports: [
     CommonModule,
     MaterialModule,
+    SharedModule,
     RouterModule.forChild([
       {
         path: "",
-        component: ServicePageComponent
-      }
-    ])
+        component: ServicePageComponent,
+      },
+    ]),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class ServicePageModule {}

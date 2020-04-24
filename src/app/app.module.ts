@@ -10,6 +10,7 @@ import { MatCardModule } from "@angular/material/card";
 import { CollapseModule } from "ngx-bootstrap";
 import { MatIconModule } from "@angular/material/icon";
 import { ScrollTopService } from "./services/scrolltop.service";
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent, HomePageComponent],
@@ -20,6 +21,7 @@ import { ScrollTopService } from "./services/scrolltop.service";
     MatButtonModule,
     MatIconModule,
     MatCardModule,
+    SharedModule,
     CollapseModule.forRoot(),
   ],
   providers: [ScrollTopService],
