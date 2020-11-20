@@ -5,16 +5,29 @@
     >
       <div class="col-md-7 d-flex align-items-center pt-md-5 px-0">
         <div class="mt-5 pt-5 mt-md-0 pt-md-0">
-          <h1 class="main-logo-text mb-4">Продажа, Установка, Обслуживание</h1>
-          <h5 class="text-secondary">в городе Николаев</h5>
-          <p class="h4 mt-4">Кондиционеры | Бойлера | Стиральные машины</p>
+          <h1 class="main-logo-text mb-4">
+            Продажа, установка, обслуживание
+            <span class="text-primary">кондиционеров.</span>
+          </h1>
+          <p class="main-logo-desc text-secondary">
+            Выполняем монтаж кондиционера любой сложности, с гарантией на
+            выполненные работы в городе Николаев.
+          </p>
           <button
             mat-raised-button
-            class="mt-4 main-btn col-12 col-xl-3 col-md-4 col-sm-6"
+            class="mt-4 main-btn mr-3"
             [routerLink]="['/service']"
             color="primary"
           >
-            Услуги
+            Наши услуги
+          </button>
+          <button
+            mat-stroked-button
+            class="mt-4 main-btn"
+            [routerLink]="['/contacts']"
+            color="primary"
+          >
+            Контакты
           </button>
         </div>
       </div>
@@ -26,38 +39,6 @@
           alt="Установить кондиционер Николаев"
         />
       </div>
-      <!-- <div class="col-1 d-none d-md-block pl-0">
-        <button
-          mat-icon-button
-          aria-label="Наши контакты"
-          routerLink="contacts"
-          class="mb-4 hover"
-        >
-          <mat-icon class="md-36 text-secondary">
-            mail_outline
-          </mat-icon>
-        </button>
-        <button
-          mat-icon-button
-          aria-label="Наши контакты"
-          routerLink="contacts"
-          class="mb-4 hover"
-        >
-          <mat-icon class="md-36 text-secondary">
-            phone_forwarded
-          </mat-icon>
-        </button>
-        <button
-          mat-icon-button
-          aria-label="Наши услуги"
-          routerLink="service"
-          class="mb-4 hover"
-        >
-          <mat-icon class="md-36 text-secondary">
-            build
-          </mat-icon>
-        </button>
-      </div> -->
     </div>
     <div class="col-12 d-flex justify-content-center py-5 mt-auto">
       <button
@@ -67,8 +48,8 @@
         aria-label="Перейти к секции описания"
       >
         <svg
-          width="38"
-          height="55"
+          width="30"
+          height="45"
           viewBox="0 0 38 55"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
