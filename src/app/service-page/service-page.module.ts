@@ -9,6 +9,7 @@ import {
 } from "./service-page.component";
 import { MaterialModule } from "../shared/material.module";
 import { SharedModule } from "../shared/shared.module";
+import { CondInstallPageComponent } from "./pages/cond-install-page/cond-install-page.component";
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from "../shared/shared.module";
     CondBuyDialog,
     CondInstallDialog,
     CondCleanDialog,
+    CondInstallPageComponent,
   ],
   entryComponents: [CondBuyDialog, CondInstallDialog, CondCleanDialog],
   imports: [
@@ -26,6 +28,10 @@ import { SharedModule } from "../shared/shared.module";
       {
         path: "",
         component: ServicePageComponent,
+      },
+      {
+        path: "cond-install",
+        component: CondInstallPageComponent,
       },
     ]),
   ],
