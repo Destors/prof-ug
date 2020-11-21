@@ -1,81 +1,83 @@
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-lg-3">
-  <div class="container">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="30"
-      viewBox="0 0 24 24"
-      width="30"
-      class="mr-2 d-none d-sm-block"
-    >
-      <path
-        fill="black"
-        d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12H12zm0 0c0 3-2.5 5.5-5.5 5.5S1 15 1 12h11zm0 0c-3 0-5.5-2.5-5.5-5.5S9 1 12 1v11zm0 0c3 0 5.5 2.5 5.5 5.5S15 23 12 23V12z"
-      />
-      <path d="M0 0h24v24H0z" fill="none" />
-    </svg>
-    <a class="navbar-brand" href="#">Профессионал Юг</a>
-    <h5 class="mr-2 navbar-line d-none d-lg-block">|</h5>
-    <button
-      mat-button
-      class="main-btn text-secondary navbar-brand-second d-none d-lg-block"
-      [routerLink]="['/service']"
-    >
-      Кондиционеры в Николаеве
-    </button>
-    <!-- <h5
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top py-lg-3">
+    <div class="container">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="30"
+        viewBox="0 0 24 24"
+        width="30"
+        class="mr-2 d-none d-sm-block"
+      >
+        <path
+          fill="black"
+          d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12H12zm0 0c0 3-2.5 5.5-5.5 5.5S1 15 1 12h11zm0 0c-3 0-5.5-2.5-5.5-5.5S9 1 12 1v11zm0 0c3 0 5.5 2.5 5.5 5.5S15 23 12 23V12z"
+        />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </svg>
+      <a class="navbar-brand" href="#">Профессионал Юг</a>
+      <h5 class="mr-2 navbar-line d-none d-lg-block">|</h5>
+      <button
+        mat-button
+        class="main-btn text-secondary navbar-brand-second d-none d-lg-block"
+        [routerLink]="['/service']"
+      >
+        Кондиционеры в Николаеве
+      </button>
+      <!-- <h5
       class="text-secondary p-0 m-0 d-none d-lg-block navbar-brand-second"
       [routerLink]="['/service']"
     >
       Кондиционеры в Николаеве
     </h5> -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      (click)="isCollapsed = !isCollapsed"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse justify-content-end"
-      id="navbarNav"
-      [collapse]="isCollapsed"
-    >
-      <ul class="navbar-nav justify-content-end mt-3 mt-md-0">
-        <li
-          class="nav-item text-center mb-3 mb-md-0"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }"
-        >
-          <a
-            class="nav-link mx-2"
-            [routerLink]="['']"
-            (click)="isCollapsed = true"
-            >Главная</a
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="isCollapsed = !isCollapsed"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+        [collapse]="isCollapsed"
+      >
+        <ul class="navbar-nav justify-content-end mt-3 mt-md-0">
+          <li
+            class="nav-item text-center mb-3 mb-md-0"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
           >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link mx-2 text-center mb-3 mb-md-0"
-            [routerLink]="['/service']"
-            (click)="isCollapsed = true"
-            >Услуги</a
-          >
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a
-            class="nav-link mx-2 text-center mb-3 mb-md-0"
-            [routerLink]="['/contacts']"
-            (click)="isCollapsed = true"
-            >Контакты</a
-          >
-        </li>
-      </ul>
+            <a
+              class="nav-link mx-2"
+              [routerLink]="['']"
+              (click)="isCollapsed = true"
+              >Главная</a
+            >
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a
+              class="nav-link mx-2 text-center mb-3 mb-md-0"
+              [routerLink]="['/service']"
+              (click)="isCollapsed = true"
+              >Услуги</a
+            >
+          </li>
+          <li class="nav-item" routerLinkActive="active">
+            <a
+              class="nav-link mx-2 text-center mb-3 mb-md-0"
+              [routerLink]="['/contacts']"
+              (click)="isCollapsed = true"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
 <router-outlet></router-outlet>

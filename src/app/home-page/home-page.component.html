@@ -1,87 +1,48 @@
-<header style="margin-top: -78px">
-  <div class="container d-flex align-items-center flex-wrap pt-md-5">
-    <div
-      class="d-flex justify-content-between align-items-center flex-wrap col-12 mt-auto px-0"
-    >
-      <div class="col-md-7 d-flex align-items-center pt-md-5 px-0">
-        <div class="mt-5 pt-5 mt-md-0 pt-md-0">
-          <h1 class="main-logo-text mb-4">
-            Продажа, установка, обслуживание
-            <span class="text-primary">кондиционеров</span>
-          </h1>
-          <p class="main-logo-desc text-secondary">
-            Выполняем монтаж кондиционера любой сложности,
-            <br class="d-none d-lg-inline-block" />
-            с гарантией на выполненные работы в городе Николаев.
-          </p>
-          <button
-            mat-raised-button
-            class="mt-4 main-btn mr-3"
-            [routerLink]="['/service']"
-            color="primary"
-          >
-            Посмотреть услуги
-          </button>
-          <button
-            mat-stroked-button
-            class="mt-4 main-btn"
-            [routerLink]="['/contacts']"
-            color="primary"
-          >
-            Контакты
-          </button>
+<main>
+  <section style="margin-top: -78px" class="bg-light bg-round pb-5">
+    <div class="container pt-md-5">
+      <div
+        class="d-flex justify-content-between align-items-center flex-wrap col-12 mt-auto px-0"
+      >
+        <div class="col-md-7 d-flex align-items-center pt-md-5 px-0">
+          <div class="mt-5 pt-5 mt-md-0 pt-md-0">
+            <h1 class="main-logo-text mb-4">
+              Продажа, установка, обслуживание
+              <span class="text-primary">кондиционеров</span>
+            </h1>
+            <p class="main-logo-desc text-secondary">
+              Выполняем монтаж кондиционера любой сложности,
+              <br class="d-none d-lg-inline-block" />
+              с гарантией на выполненные работы в городе Николаев.
+            </p>
+            <button
+              mat-raised-button
+              class="mt-4 main-btn mr-3"
+              [routerLink]="['/service']"
+              color="primary"
+            >
+              Посмотреть услуги
+            </button>
+            <button
+              mat-stroked-button
+              class="mt-4 main-btn"
+              [routerLink]="['/contacts']"
+              color="primary"
+            >
+              Контакты
+            </button>
+          </div>
+        </div>
+        <div class="col-md-5 justify-content-end mt-5 mb-5 mb-md-0 px-0">
+          <img
+            height="auto"
+            width="85%"
+            src="/assets/img/cond_main.svg"
+            alt="Установить кондиционер Николаев"
+          />
         </div>
       </div>
-      <div class="col-md-5 justify-content-end mt-5 mb-5 mb-md-0 px-0">
-        <img
-          height="auto"
-          width="85%"
-          src="/assets/img/cond_main.svg"
-          alt="Установить кондиционер Николаев"
-        />
-      </div>
-    </div>
-    <!-- <div class="col-12 d-flex justify-content-center py-5 mt-auto">
-      <button
-        mat-icon-button
-        class="d-none d-md-block hover"
-        (click)="scroll(second)"
-        aria-label="Перейти к секции описания"
-      >
-        <svg
-          width="30"
-          height="45"
-          viewBox="0 0 38 55"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="1.5"
-            y="1.5"
-            width="35"
-            height="52"
-            rx="17.5"
-            stroke="#58555D"
-            stroke-width="3"
-          />
-          <line
-            x1="19.5"
-            y1="10.5"
-            x2="19.5"
-            y2="20.5"
-            stroke="#58555D"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-        </svg>
-      </button>
-    </div> -->
-  </div>
-</header>
 
-<main>
-  <section class="pb-4" id="second" #second>
-    <div class="container">
       <h2 class="text-center mt-5 d-none">Как работает Профессионал Юг</h2>
       <ol class="row">
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
@@ -139,48 +100,42 @@
           </p>
         </li>
       </ol>
-    </div>
-  </section>
-  <hr class="mb-0" />
-  <section class="bg-light pt-5">
-    <div class="container">
-      <h1 class="text-center">О нас</h1>
-      <ul>
-        <li class="row align-items-center mt-5">
-          <div class="col-lg-6">
-            <h2 class="mb-3">Большой опыт работы</h2>
-            <p class="text-secondary">
-              Наша компания успешно работает на рынке обслуживания кондиционеров
-              в городе Николаев уже более <b>15 лет</b>.
-            </p>
-            <div class="d-flex align-items-center">
-              <div class="icon-bg-second mr-4">
-                <mat-icon
-                  aria-hidden="false"
-                  aria-label="Example home icon"
-                  class="md-36 text-primary"
-                  >local_shipping</mat-icon
-                >
-              </div>
-              <div>
-                <h4 class="mt-4">Доставка</h4>
-                <p class="text-secondary">
-                  При покупке кондиционера у нас, вы получаете полностью
-                  <b>бесплатную доставку</b> в подарок.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img
-              src="../assets/img/undraw_QA_engineers_dg5p.svg"
-              width="70%"
-              height="auto"
-              alt=""
-            />
-          </div>
-        </li>
-        <li class="row align-items-center mt-5">
+
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-6">
+          <h2 class="mb-3">
+            Более 15 лет опыта работы с
+            <span class="text-primary">кондиционерами </span>
+          </h2>
+          <p class="text-secondary main-logo-desc">
+            Наша компания, успешно работает на рынке обслуживания кондиционеров
+            в городе Николаев, уже более 15 лет.
+          </p>
+          <ul class="d-flex flex-wrap mt-3">
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">1000+</p>
+              <p class="text-secondary">Установленных <br />кондиционеров</p>
+            </li>
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">1500+</p>
+              <p class="text-secondary">Профилактик <br />кондиционеров</p>
+            </li>
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">2000+</p>
+              <p class="text-secondary">Довольных <br />клиентов</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center order-first">
+          <img
+            src="../assets/img/undraw_QA_engineers_dg5p.svg"
+            width="70%"
+            height="auto"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- <li class="row align-items-center mt-5">
           <div class="col-lg-6 text-center">
             <img
               src="../assets/img/undraw_house_searching_n8mp.svg"
@@ -196,8 +151,8 @@
               бытовой техники.
             </p>
           </div>
-        </li>
-        <li class="row align-items-center mt-5">
+        </li> -->
+      <!-- <li class="row align-items-center mt-5">
           <div class="col-lg-6">
             <h3 class="mb-3">Гениальность в деталях</h3>
             <p>Проявляем внимание к каждой мелочи.</p>
@@ -210,11 +165,77 @@
               alt=""
             />
           </div>
-        </li>
-      </ul>
+        </li> -->
     </div>
   </section>
-  <section class="mt-5 pb-5 bg-light">
+  <section class="container">
+    <h2 class="text-center mt-5">
+      Все наши сотрудники, <br class="d-none d-lg-inline-block" />
+      <div class="text-success">высококвалифицированные специалисты</div>
+    </h2>
+    <p class="main-logo-desc text-center mb-5 text-secondary">
+      Все наши сотрудники, высококвалифицированные специалисты
+    </p>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/team/roman.jpg"
+            alt="Просолович Роман Валерьевич"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2 team-title">Просолович Роман</h5>
+          </div>
+          <hr />
+          <p class="text-center">Главный инженер</p>
+        </mat-card>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/team/sasha.jpg"
+            alt="Ревак Александр Александрович"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">Ревак Александр</h5>
+          </div>
+          <hr />
+          <p class="text-center">Старший мастер</p>
+        </mat-card>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/team/youra_2.jpg"
+            alt="Ерофейкин Юрий Юрьевич"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">Ерофейкин Юрий</h5>
+          </div>
+          <hr />
+          <p class="text-center">Глава сервистной группы</p>
+        </mat-card>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <mat-card>
+          <img
+            mat-card-image
+            src="../assets/img/team/oleg.jpg"
+            alt="Купить кондиционер в Николаеве"
+          />
+          <div class="card-head text-center">
+            <h5 class="pt-2 pb-2">Ивасенко Олег</h5>
+          </div>
+          <hr />
+          <p class="text-center">Зам главного инженера</p>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+  <section class="mt-5 pb-5">
     <div class="container pt-4">
       <ul class="row">
         <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
@@ -333,70 +354,7 @@
       </ul>
     </div>
   </section>
-  <section class="container">
-    <h2 class="text-center mt-5">Наша команда</h2>
-    <p class="lead text-center mb-5">
-      Все наши сотрудники, высококвалифицированные специалисты
-    </p>
-    <div class="row">
-      <div class="col-lg-3 col-md-6 mb-4">
-        <mat-card>
-          <img
-            mat-card-image
-            src="../assets/img/team/roman.jpg"
-            alt="Просолович Роман Валерьевич"
-          />
-          <div class="card-head text-center">
-            <h5 class="pt-2 pb-2 team-title">Просолович Роман</h5>
-          </div>
-          <hr />
-          <p class="text-center">Главный инженер</p>
-        </mat-card>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <mat-card>
-          <img
-            mat-card-image
-            src="../assets/img/team/sasha.jpg"
-            alt="Ревак Александр Александрович"
-          />
-          <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">Ревак Александр</h5>
-          </div>
-          <hr />
-          <p class="text-center">Старший мастер</p>
-        </mat-card>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <mat-card>
-          <img
-            mat-card-image
-            src="../assets/img/team/youra_2.jpg"
-            alt="Ерофейкин Юрий Юрьевич"
-          />
-          <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">Ерофейкин Юрий</h5>
-          </div>
-          <hr />
-          <p class="text-center">Глава сервистной группы</p>
-        </mat-card>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <mat-card>
-          <img
-            mat-card-image
-            src="../assets/img/team/oleg.jpg"
-            alt="Купить кондиционер в Николаеве"
-          />
-          <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">Ивасенко Олег</h5>
-          </div>
-          <hr />
-          <p class="text-center">Зам главного инженера</p>
-        </mat-card>
-      </div>
-    </div>
-  </section>
+
   <section class="mb-4">
     <!-- <hr /> -->
     <div class="d-flex flex-wrap">
