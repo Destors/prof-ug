@@ -169,13 +169,13 @@
     </div>
   </section>
   <section class="container">
-    <h2 class="text-center mt-5">
+    <h2 class="text-center my-5">
       Все наши сотрудники, <br class="d-none d-lg-inline-block" />
       <div class="text-success">высококвалифицированные специалисты</div>
     </h2>
-    <p class="main-logo-desc text-center mb-5 text-secondary">
+    <!-- <p class="main-logo-desc text-center mb-5 text-secondary">
       Все наши сотрудники, высококвалифицированные специалисты
-    </p>
+    </p> -->
     <div class="row">
       <div class="col-lg-3 col-md-6 mb-4">
         <mat-card>
@@ -188,7 +188,7 @@
             <h5 class="pt-2 pb-2 team-title">Просолович Роман</h5>
           </div>
           <hr />
-          <p class="text-center">Главный инженер</p>
+          <p class="text-center text-secondary">Главный инженер</p>
         </mat-card>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -202,7 +202,7 @@
             <h5 class="pt-2 pb-2">Ревак Александр</h5>
           </div>
           <hr />
-          <p class="text-center">Старший мастер</p>
+          <p class="text-center text-secondary">Старший мастер</p>
         </mat-card>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -216,7 +216,7 @@
             <h5 class="pt-2 pb-2">Ерофейкин Юрий</h5>
           </div>
           <hr />
-          <p class="text-center">Глава сервистной группы</p>
+          <p class="text-center text-secondary">Глава сервистной группы</p>
         </mat-card>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
@@ -230,50 +230,62 @@
             <h5 class="pt-2 pb-2">Ивасенко Олег</h5>
           </div>
           <hr />
-          <p class="text-center">Зам главного инженера</p>
+          <p class="text-center text-secondary">Зам главного инженера</p>
         </mat-card>
       </div>
     </div>
   </section>
-  <section class="mt-5 pb-5">
+  <section class="mt-5 pb-5 bg-primary">
     <div class="container pt-4">
+      <h2 class="text-white text-center my-5">
+        Быстрые и удобные решения для всех наших клиентов
+      </h2>
       <ul class="row">
         <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36 mr-2"
-            >verified_user</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Надежность</h4>
-          <p>
-            Наша компания успешно работает на рынке обслуживания
-            кондиционеров<br />
-            в городе Николаев уже <b>15 лет</b>.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            За эти годы мы набрались колоссального опыта и готовы его применять.
-          </p>
+          <mat-card class="vh-100">
+            <div class="d-flex align-items-center mb-3">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 mr-2 text-success"
+                >verified_user</mat-icon
+              >
+              <h4 class="mb-0">Надежность</h4>
+            </div>
+            <p class="text-secondary">
+              Наша компания успешно работает на рынке обслуживания
+              кондиционеров<br />
+              в городе Николаев уже <b>15 лет</b>.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary">
+              За эти годы мы набрались колоссального опыта и готовы его
+              применять.
+            </p>
+          </mat-card>
         </li>
 
         <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36 mr-2"
-            >local_grocery_store</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Покупка</h4>
-          <p>
-            Купить кондиционер в Николаеве, теперь можно в
-            <b>один звонок.</b> Наши консультанты помогут Вам с выбором.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            Больше не нужно переживать за доставку, оплату, и бракованный товар
-            - мы позаботимся об этом за Вас.
-          </p>
+          <mat-card class="vh-100">
+            <div class="d-flex align-items-center mb-3">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 mr-2 text-success"
+                >local_grocery_store</mat-icon
+              >
+              <h4 class="mb-0">Покупка</h4>
+            </div>
+            <p class="text-secondary">
+              Купить кондиционер в Николаеве, теперь можно в
+              <b>один звонок.</b> Наши консультанты помогут Вам с выбором.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary">
+              Больше не нужно переживать за доставку, оплату, и бракованный
+              товар - мы позаботимся об этом за Вас.
+            </p>
+          </mat-card>
         </li>
 
         <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">

@@ -23,7 +23,7 @@ html {
 }
 
 .vh-100 {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 html,
@@ -57,8 +57,4 @@ ul {
 
 .navbar {
   border-bottom: 1px solid lightgray;
-}
-
-.text-orange {
-  
 }
