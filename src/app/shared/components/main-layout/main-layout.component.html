@@ -7,14 +7,27 @@
       width="30"
       class="mr-2 d-none d-sm-block"
     >
-      <path fill="black"
+      <path
+        fill="black"
         d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12H12zm0 0c0 3-2.5 5.5-5.5 5.5S1 15 1 12h11zm0 0c-3 0-5.5-2.5-5.5-5.5S9 1 12 1v11zm0 0c3 0 5.5 2.5 5.5 5.5S15 23 12 23V12z"
       />
       <path d="M0 0h24v24H0z" fill="none" />
     </svg>
     <a class="navbar-brand" href="#">Профессионал Юг</a>
-    <h5 class="mr-3 navbar-line d-none d-lg-block">|</h5>
-    <h5 class="text-secondary p-0 m-0 d-none d-lg-block">Кондиционеры в Николаеве</h5>
+    <h5 class="mr-2 navbar-line d-none d-lg-block">|</h5>
+    <button
+      mat-button
+      class="main-btn text-secondary navbar-brand-second d-none d-lg-block"
+      [routerLink]="['/service']"
+    >
+      Кондиционеры в Николаеве
+    </button>
+    <!-- <h5
+      class="text-secondary p-0 m-0 d-none d-lg-block navbar-brand-second"
+      [routerLink]="['/service']"
+    >
+      Кондиционеры в Николаеве
+    </h5> -->
     <button
       class="navbar-toggler"
       type="button"
@@ -38,7 +51,10 @@
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true }"
         >
-          <a class="nav-link mx-2" [routerLink]="['']" (click)="isCollapsed = true"
+          <a
+            class="nav-link mx-2"
+            [routerLink]="['']"
+            (click)="isCollapsed = true"
             >Главная</a
           >
         </li>
