@@ -6,7 +6,7 @@ import { Title, Meta } from "@angular/platform-browser";
 @Component({
   selector: "app-service-page",
   templateUrl: "./service-page.component.html",
-  styleUrls: ["./service-page.component.scss"]
+  styleUrls: ["./service-page.component.scss"],
 })
 export class ServicePageComponent implements OnInit {
   title = "Услуги Профессионал Юг";
@@ -15,12 +15,12 @@ export class ServicePageComponent implements OnInit {
     public dialog: MatDialog,
     private snackBar: MatSnackBar,
     private titleService: Title,
-    private meta: Meta,
+    private meta: Meta
   ) {}
 
   openSnackBar(message: string, action: string) {
     this.snackBar.open(message, action, {
-      duration: 6000
+      duration: 6000,
     });
   }
 
@@ -28,7 +28,7 @@ export class ServicePageComponent implements OnInit {
     const dialogRef = this.dialog.open(CondBuyDialog);
   }
 
-  openDialogInstallCond() {
+  openDialogBuyCondInstall() {
     const dialogRef = this.dialog.open(CondInstallDialog);
   }
   openDialogCleanCond() {
@@ -38,16 +38,24 @@ export class ServicePageComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle(this.title);
     // tslint:disable-next-line:max-line-length
-    this.meta.updateTag({name: "keywords", content: "ремонт кондиционера, чистка кондициоенра, профилактика кондиционера,купить бойлер Николаев, установить бойлер, установка бойлеров, чистка бойлера, купить стиральную машину, ремонт стиральных машин"});
+    this.meta.updateTag({
+      name: "keywords",
+      content:
+        "ремонт кондиционера, чистка кондициоенра, профилактика кондиционера,купить бойлер Николаев, установить бойлер, установка бойлеров, чистка бойлера, купить стиральную машину, ремонт стиральных машин",
+    });
     // tslint:disable-next-line:max-line-length
-    this.meta.updateTag({name: "description", content: "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы. Чистка и профилактика кондиционеров а также, стиральных машин и бойлеров в городе Николаев"});
+    this.meta.updateTag({
+      name: "description",
+      content:
+        "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы. Чистка и профилактика кондиционеров а также, стиральных машин и бойлеров в городе Николаев",
+    });
   }
 }
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: "CondCleanDialog",
-  templateUrl: "./dialog/cond-clean-dialog.html"
+  templateUrl: "./dialog/cond-clean-dialog.html",
 })
 // tslint:disable-next-line:component-class-suffix
 export class CondCleanDialog {}
@@ -55,7 +63,7 @@ export class CondCleanDialog {}
 @Component({
   // tslint:disable-next-line:component-selector
   selector: "CondBuyDialog",
-  templateUrl: "./dialog/cond-buy-dialog.html"
+  templateUrl: "./dialog/cond-buy-dialog.html",
 })
 // tslint:disable-next-line:component-class-suffix
 export class CondBuyDialog {}
@@ -63,7 +71,7 @@ export class CondBuyDialog {}
 @Component({
   // tslint:disable-next-line:component-selector
   selector: "CondInstallDialog",
-  templateUrl: "./dialog/cond-install-dialog.html"
+  templateUrl: "./dialog/cond-install-dialog.html",
 })
 // tslint:disable-next-line:component-class-suffix
 export class CondInstallDialog {}
