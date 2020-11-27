@@ -7,7 +7,7 @@ import { MainLayoutComponent } from "./shared/components/main-layout/main-layout
 import { HomePageComponent } from "./home-page/home-page.component";
 import { MatButtonModule } from "@angular/material/button";
 import { MatCardModule } from "@angular/material/card";
-import { CollapseModule } from "ngx-bootstrap";
+import { CollapseModule } from "ngx-bootstrap/collapse";
 import { MatIconModule } from "@angular/material/icon";
 import { ScrollTopService } from "./services/scrolltop.service";
 import { SharedModule } from "./shared/shared.module";
