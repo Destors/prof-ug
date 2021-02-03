@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { ScrollTopService } from "./services/scrolltop.service";
-import { CanonicalService } from "./shared/canonical.service";
 
 @Component({
   selector: "app-root",
@@ -11,10 +10,7 @@ export class AppComponent implements OnInit {
   title = "prof-ug";
   isCollapsed = true;
 
-  constructor(
-    private scrollTopService: ScrollTopService,
-    private canonicalService: CanonicalService
-  ) {}
+  constructor(private scrollTopService: ScrollTopService) {}
 
   ngOnInit() {
     this.scrollTopService.setScrollTop();
