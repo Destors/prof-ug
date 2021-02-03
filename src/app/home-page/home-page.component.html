@@ -200,10 +200,10 @@
           </p>
           <button
             mat-raised-button
-            [routerLink]="['/contacts']"
+            [routerLink]="['/service/cond-install']"
             color="primary"
           >
-            Заказать
+            Подробнее<mat-icon aria-hidden="false" class="ml-2">arrow_forward</mat-icon>
           </button></mat-card
         >
       </div>
@@ -224,19 +224,21 @@
         >
       </div>
       <div class="col mt-4">
-        <mat-card class="h-100"
+        <mat-card class="h-100 d-flex flex-column"
           ><h3 class="h4">Другие услуги</h3>
           <p class="text-secondary">
             Ознакомьтесь с полным списком наших услуг.
           </p>
-          <button
-            mat-stroked-button
-            color="primary"
-            [routerLink]="['/service']"
-          >
-            Посмотреть услуги
-          </button></mat-card
-        >
+          <div class="mt-auto">
+            <button
+              mat-stroked-button
+              color="primary"
+              [routerLink]="['/service']"
+            >
+              Посмотреть услуги
+            </button>
+          </div>
+        </mat-card>
       </div>
     </div>
   </section>
