@@ -10,6 +10,7 @@ import {
 import { MaterialModule } from "../shared/material.module";
 import { SharedModule } from "../shared/shared.module";
 import { CondInstallPageComponent } from "./pages/cond-install-page/cond-install-page.component";
+import { MatTabsModule } from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { CondInstallPageComponent } from "./pages/cond-install-page/cond-install
     CommonModule,
     MaterialModule,
     SharedModule,
+    MatTabsModule,
     RouterModule.forChild([
       {
         path: "",
