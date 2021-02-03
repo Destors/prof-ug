@@ -2,6 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { MatDialog } from "@angular/material/dialog";
 import { MatSnackBar } from "@angular/material";
 import { Title, Meta } from "@angular/platform-browser";
+import { DOCUMENT } from "@angular/common";
+import { Injectable, Inject } from "@angular/core";
 
 @Component({
   selector: "app-service-page",
@@ -15,7 +17,8 @@ export class ServicePageComponent implements OnInit {
     public dialog: MatDialog,
     private snackBar: MatSnackBar,
     private titleService: Title,
-    private meta: Meta
+    private meta: Meta,
+    @Inject(DOCUMENT) private dom
   ) {}
 
   openSnackBar(message: string, action: string) {
@@ -51,6 +54,11 @@ export class ServicePageComponent implements OnInit {
         // tslint:disable-next-line:max-line-length
         "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы. Чистка и профилактика кондиционеров а также, стиральных машин и бойлеров в городе Николаев",
     });
+    const domainName = "https://prof-ug.com/service";
+    const link: HTMLLinkElement = this.dom.createElement("link");
+    link.setAttribute("rel", "canonical");
+    this.dom.head.appendChild(link);
+    link.setAttribute("href", domainName);
   }
 }
 

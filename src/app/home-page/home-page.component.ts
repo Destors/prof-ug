@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
+import { DOCUMENT } from "@angular/common";
+import { Injectable, Inject } from "@angular/core";
 
 @Component({
   selector: "app-home-page",
@@ -14,7 +16,11 @@ export class HomePageComponent implements OnInit {
     el.scrollIntoView();
   }
 
-  constructor(private titleService: Title, private metaService: Meta) {}
+  constructor(
+    private titleService: Title,
+    private metaService: Meta,
+    @Inject(DOCUMENT) private dom
+  ) {}
 
   ngOnInit() {
     this.titleService.setTitle(this.title);
@@ -49,5 +55,10 @@ export class HomePageComponent implements OnInit {
       { property: "og:image:width", content: "968" },
       { property: "og:image:height", content: "751" },
     ]);
+    const domainName = "https://prof-ug.com/";
+    const link: HTMLLinkElement = this.dom.createElement("link");
+    link.setAttribute("rel", "canonical");
+    this.dom.head.appendChild(link);
+    link.setAttribute("href", domainName);
   }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
+import { DOCUMENT } from "@angular/common";
+import { Injectable, Inject } from "@angular/core";
 
 export interface PeriodicElement {
   name: string;
@@ -46,7 +48,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class CondInstallPageComponent implements OnInit {
   title = "Установить кондиционер в Николаеве";
-  constructor(private titleService: Title, private meta: Meta) {}
+  constructor(
+    private titleService: Title,
+    private meta: Meta,
+    @Inject(DOCUMENT) private dom
+  ) {}
   displayedColumns: string[] = ["position", "name"];
   dataSource = ELEMENT_DATA;
   ngOnInit() {
@@ -65,5 +71,10 @@ export class CondInstallPageComponent implements OnInit {
         // tslint:disable-next-line:max-line-length
         "Установка кондиционеров любой сложности в городе Николаев, официальная гарантия на выполненные работы. Наша компания оказывает услуги по высококвалифицированной установке кондиционеров, в квартирах, частных домах и офисах. Осуществляем весь спектр услуг по обслуживанию климатической техники. Вы можете заказать Монтаж кондиционера любого уровня сложности в Николаеве, с гарантией на выполненные работы.",
     });
+    const domainName = "https://prof-ug.com/service/cond-install";
+    const link: HTMLLinkElement = this.dom.createElement("link");
+    link.setAttribute("rel", "canonical");
+    this.dom.head.appendChild(link);
+    link.setAttribute("href", domainName);
   }
 }
