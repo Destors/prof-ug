@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Title, Meta } from "@angular/platform-browser";
 
 export interface PeriodicElement {
   name: string;
@@ -8,7 +9,7 @@ export interface PeriodicElement {
 const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 1,
-    name: "Анализ территории и выбор места установки ",
+    name: "Замеры и выбор места установки ",
   },
   {
     position: 2,
@@ -44,8 +45,25 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ["./cond-install-page.component.scss"],
 })
 export class CondInstallPageComponent implements OnInit {
-  constructor() {}
+  title = "Установка кондиционеров в Николаеве";
+  constructor(private titleService: Title, private meta: Meta) {}
   displayedColumns: string[] = ["position", "name"];
   dataSource = ELEMENT_DATA;
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.titleService.setTitle(this.title);
+    // tslint:disable-next-line:max-line-length
+    this.meta.updateTag({
+      name: "keywords",
+      content:
+        // tslint:disable-next-line:max-line-length
+        "Установить кондиционер в николаеве, монтаж кондиционера, установка кондиционеров, установка кондиционеров николаев, монтаж кондиционера николаев",
+    });
+    // tslint:disable-next-line:max-line-length
+    this.meta.updateTag({
+      name: "description",
+      content:
+        // tslint:disable-next-line:max-line-length
+        "Установка кондиционеров любой сложности в городе Николаев, официальная гарантия на выполненые работы. Наша компания оказывает услуги по высококвалифицированной установке кондиционеров, в квартирах, частных домах и офисах. Осуществляем весь спектр услуг по обслуживанию климатической техники.",
+    });
+  }
 }

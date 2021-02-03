@@ -1,8 +1,11 @@
 <div class="bg-light bg-round">
   <div class="container">
     <section class="pt-3 pb-5">
-      <div class="d-flex align-items-center justify-content-center">
-        <button mat-button [routerLink]="['/service']">Услуги</button
+      <div class="d-flex align-items-center">
+        <button mat-button [routerLink]="['/']">Главная</button
+        ><mat-icon aria-hidden="true" class="md-24 text-secondary"
+          >keyboard_arrow_right</mat-icon
+        ><button mat-button [routerLink]="['/service']">Услуги</button
         ><mat-icon aria-hidden="true" class="md-24 text-secondary"
           >keyboard_arrow_right</mat-icon
         ><button mat-button disabled>Установка кондиционеров</button>

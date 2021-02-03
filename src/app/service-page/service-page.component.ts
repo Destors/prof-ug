@@ -41,12 +41,14 @@ export class ServicePageComponent implements OnInit {
     this.meta.updateTag({
       name: "keywords",
       content:
+        // tslint:disable-next-line:max-line-length
         "ремонт кондиционера, чистка кондициоенра, профилактика кондиционера,купить бойлер Николаев, установить бойлер, установка бойлеров, чистка бойлера, купить стиральную машину, ремонт стиральных машин",
     });
     // tslint:disable-next-line:max-line-length
     this.meta.updateTag({
       name: "description",
       content:
+        // tslint:disable-next-line:max-line-length
         "Установка кондиционеров любой сложности, официальная гарантия на выполненые работы. Чистка и профилактика кондиционеров а также, стиральных машин и бойлеров в городе Николаев",
     });
   }
