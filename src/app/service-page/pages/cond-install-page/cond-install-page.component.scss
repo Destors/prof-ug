@@ -13,3 +13,9 @@
   border-bottom: 1px solid #eeeeee;
   border-bottom-right-radius: 40%;
 }
+
+@media (max-width: 765px) {
+  .bg-round {
+    border-bottom-right-radius: 0;
+  }
+}

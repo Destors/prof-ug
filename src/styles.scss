@@ -13,4 +13,26 @@
 @import "../node_modules/bootstrap/scss/utilities/position";
 @import "../node_modules/bootstrap/scss/utilities/text";
 
+html {
+  font-size: 0.8rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+  }
+}
+
 //bootstrap -- end
