@@ -154,7 +154,8 @@
           <p class="lead">
             Существует ряд распространенных схем установки, они отличаются
             длинной трассы и особенностями размещения наружного и внутреннего
-            блока. А также сложностью монтажа и дальнейшим обслуживанием кондиционера.
+            блока. А также сложностью монтажа и дальнейшим обслуживанием
+            кондиционера.
           </p>
           <ul class="row row-cols-2">
             <li class="col mb-4">
@@ -209,7 +210,29 @@
           </ul>
         </div>
       </mat-tab>
-      <mat-tab label="Список работ">Список работ</mat-tab>
+      <mat-tab label="Список работ"
+        ><div class="container py-3">
+          <table mat-table [dataSource]="dataSource" class="mat-elevation-z5">
+            <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef>Номер</th>
+              <td mat-cell *matCellDef="let element">
+                {{ element.position }}
+              </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Наименование</th>
+              <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+            </ng-container>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table></div
+      ></mat-tab>
       <mat-tab label="Материалы">Материалы</mat-tab>
     </mat-tab-group>
   </section>
