@@ -1,85 +1,149 @@
-<div class="bg-light">
+<div class="bg-light bg-round">
   <div class="container">
-    <section class="pt-5">
-      <h1>Установка кондиционеров</h1>
-
-      <div class="row mt-5">
-        <div class="col-xl-4 text-center mb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            verified_user
-          </mat-icon>
-          <h3><b>Гарантия</b></h3>
-          <p>Предоставляем <b>гарантию</b> на выполненные работы</p>
-        </div>
-        <div class="col-xl-4 text-center mb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            settings
-          </mat-icon>
-          <h3><b>Технологии</b></h3>
-          <p>
-            Используем самые <b>современые</b> технологии с соблюдений всех
-            правил установки, заявленых производителем
-          </p>
-        </div>
-        <div class="col-xl-4 text-center mb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            query_builder
-          </mat-icon>
-          <h3><b>Скорость</b></h3>
-          <p>Время установки под ключ, занимает от 1.5 до 2 часов</p>
-        </div>
-        <div class="col-xl-4 text-center mb-4 px-5">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            delete_sweep
-          </mat-icon>
-          <h3><b>Чистота</b></h3>
-          <p>Выполняем <b>уборку</b> строительного муссора, после установки</p>
-        </div>
-        <div class="col-xl-4 text-center mb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            spellcheck
-          </mat-icon>
-          <h3><b>Тестирование</b></h3>
-          <p>
-            Производим тестирование кондиционера во всех режимах с
-            использованием спец. оборудывания
-          </p>
-        </div>
-        <div class="col-xl-4 text-center mb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48 mb-4 text-success"
-          >
-            help_outline
-          </mat-icon>
-          <h3><b>Консультация</b></h3>
-          <p>
-            Проводим обучение пользователя, меры предосторожности и
-            <b>правила</b> эксплуатации
-          </p>
-        </div>
+    <section class="pt-3 pb-5">
+      <div class="d-flex align-items-center justify-content-center">
+        <button mat-button [routerLink]="['/service']">Услуги</button
+        ><mat-icon aria-hidden="true" class="md-24 text-secondary"
+          >keyboard_arrow_right</mat-icon
+        ><button mat-button disabled>Установка кондиционеров</button>
+      </div>
+      <div class="pt-2">
+        <h1 class="mb-2">
+          Помогаем установить кондиционер в Николаеве на высшем уровне
+        </h1>
+        <p class="lead mb-5 text-secondary">
+          Наша компания оказывает услуги по высококвалифицированной установке
+          кондиционеров, в квартирах, частных домах и офисах. Осуществляем весь
+          спектр услуг по обслуживанию климатической техники.
+        </p>
+        <ul class="row row-cols-4">
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >verified_user</mat-icon
+              >
+            </div>
+            <h3 class="mt-4 mb-3 h4">Гарантия</h3>
+            <p class="text-secondary">
+              Предоставляем <b>гарантию</b> на выполненные работы
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >query_builder</mat-icon
+              >
+            </div>
+            <h3 class="mt-4 mb-3 h4">Скорость</h3>
+            <p class="text-secondary">
+              Время установки под ключ, занимает от 1.5 до 2 часов.
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >delete_sweep</mat-icon
+              >
+            </div>
+            <h4 class="mt-4 mb-3">Чистота</h4>
+            <p class="text-secondary">
+              Выполняем <b>уборку</b> строительного муссора, после монтажа
+              кондиционера.
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >settings</mat-icon
+              >
+            </div>
+            <h3 class="mt-4 mb-3 h4">Технологии</h3>
+            <p class="text-secondary">
+              Используем самые <b>современые</b> технологии с соблюдений всех
+              правил установки, заявленых производителем.
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >spellcheck</mat-icon
+              >
+            </div>
+            <h4 class="mt-4 mb-3">Тестирование</h4>
+            <p class="text-secondary">
+              Производим тестирование кондиционера во всех режимах с
+              использованием спец. оборудования.
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >help_outline</mat-icon
+              >
+            </div>
+            <h4 class="mt-4 mb-3">Консультация</h4>
+            <p class="text-secondary">
+              Проводим обучение пользователя, меры предосторожности и
+              <b>правила эксплуатации.</b>
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >credit_card</mat-icon
+              >
+            </div>
+            <h4 class="mt-4 mb-3">Оплата</h4>
+            <p class="text-secondary">
+              Оплата производится по факту <b>окончания установки</b>, любым
+              удобным для Вас способом.
+            </p>
+          </li>
+          <li class="col mb-4">
+            <div class="icon-bg">
+              <mat-icon
+                aria-hidden="false"
+                aria-label="Example home icon"
+                class="md-36 text-primary"
+                >local_phone</mat-icon
+              >
+            </div>
+            <h4 class="mt-4 mb-3">Доступность</h4>
+            <p class="text-secondary">
+              В случае возникновения любых проблем, мы всегда доступны для
+              связи.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
   </div>
+</div>
+<div class="container">
+  <section class="py-5">
+    <h2>
+     Как выполняется монтаж кондиционера
+    </h2>
+  </section>
 </div>
