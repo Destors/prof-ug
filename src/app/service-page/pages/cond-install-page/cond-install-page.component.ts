@@ -45,7 +45,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ["./cond-install-page.component.scss"],
 })
 export class CondInstallPageComponent implements OnInit {
-  title = "Установка кондиционеров в Николаеве";
+  title = "Установить кондиционер в Николаеве";
   constructor(private titleService: Title, private meta: Meta) {}
   displayedColumns: string[] = ["position", "name"];
   dataSource = ELEMENT_DATA;
