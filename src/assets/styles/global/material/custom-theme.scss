@@ -34,12 +34,12 @@ mat-hint {
 .material-icons.md-48 {
   font-size: 48px;
 }
-.material-icons {
-  vertical-align: bottom;
-}
+// .material-icons {
+//   vertical-align: bottom;
+// }
 
 .mat-card:hover {
-  box-shadow: -1px 5px 10px 0px rgba(95, 95, 95, 0.8);
+  box-shadow: -1px 5px 10px 0px rgba(167, 167, 167, 0.6);
 }
 
 .mat-icon {
@@ -60,4 +60,23 @@ mat-hint {
 
 .mat-tooltip {
   font-size: 12px !important;
+}
+
+mat-card-image {
+  margin-bottom: -16px !important;
+}
+
+.mat-tab-label,
+.mat-tab-link {
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-header-cell {
+  font-size: inherit !important;
+  color: black !important;
 }

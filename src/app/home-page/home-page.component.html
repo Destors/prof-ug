@@ -1,121 +1,132 @@
-<header>
-  <div class="container vh-100 d-flex align-items-center flex-wrap">
-    <div
-      class="d-flex justify-content-between align-items-center flex-wrap col-12"
-    >
-      <div class="col-12 col-md-7 d-flex align-items-center">
-        <div class="mt-5 pt-5 mt-md-0 pt-md-0">
-          <h1 class="main-logo-text mb-4">Продажа, Установка, Обслуживание</h1>
-          <h5 class="text-secondary">в городе Николаев</h5>
-          <p class="h4 mt-4">Кондиционеры | Бойлера | Стиральные машины</p>
-          <button
-            mat-raised-button
-            class="mt-4 main-btn col-12 col-xl-3 col-md-3 col-sm-6"
-            [routerLink]="['/service']"
-            color="primary"
-          >
-            Услуги
-          </button>
+<main>
+  <section style="margin-top: -78px" class="bg-light bg-round pb-5">
+    <div class="container pt-md-5">
+      <div
+        class="d-flex justify-content-between align-items-center flex-wrap col-12 mt-auto px-0"
+      >
+        <div class="col-md-7 d-flex align-items-center pt-md-5 px-0">
+          <div class="mt-5 pt-5 mt-md-0 pt-md-0">
+            <h1 class="main-logo-text mb-4">
+              Продажа, установка, обслуживание
+              <span class="text-primary">кондиционеров</span>
+            </h1>
+            <p class="lead text-secondary mb-0">
+              Можем установить кондиционер любой сложности,
+              <br class="d-none d-lg-inline-block" />
+              с гарантией на выполненные работы в городе Николаев.
+            </p>
+            <button
+              mat-raised-button
+              class="mt-4 main-btn mr-3"
+              [routerLink]="['/service']"
+              color="primary"
+            >
+              Посмотреть услуги
+            </button>
+            <button
+              mat-stroked-button
+              class="mt-4 main-btn"
+              [routerLink]="['/contacts']"
+              color="primary"
+            >
+              Контакты
+            </button>
+          </div>
+        </div>
+        <div class="col-md-5 justify-content-end mt-5 mb-5 mb-md-0 px-0">
+          <img
+            height="auto"
+            width="85%"
+            src="/assets/img/cond_main.svg"
+            alt="Установить кондиционер Николаев"
+          />
         </div>
       </div>
-      <div class="col col-md-5 justify-content-end mt-5 mb-5 mb-md-0">
-        <img
-          height="auto"
-          width="100%"
-          src="/assets/img/cond_main.svg"
-          alt="Установить кондиционер Николаев"
-        />
-      </div>
-    </div>
-    <a class="mouse-btn d-none d-md-block" href="#second"
-      ><svg
-        width="38"
-        height="55"
-        viewBox="0 0 38 55"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="1.5"
-          y="1.5"
-          width="35"
-          height="52"
-          rx="17.5"
-          stroke="#58555D"
-          stroke-width="3"
-        />
-        <line
-          x1="19.5"
-          y1="10.5"
-          x2="19.5"
-          y2="20.5"
-          stroke="#58555D"
-          stroke-width="3"
-          stroke-linecap="round"
-        />
-      </svg>
-    </a>
-  </div>
-</header>
-<main>
-  <section class="pt-4 pb-4 bg-primary text-white" id="second">
-    <div class="container">
-      <h2 class="text-center mt-5">Как работает Профессионал Юг</h2>
-      <ol class="row text-center">
+
+      <h2 class="text-center mt-5 d-none">Как работает Профессионал Юг</h2>
+      <ol class="row">
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48"
-            >phone_enabled</mat-icon
-          >
-          <h4 class="mt-4 mb-3">Звонок</h4>
-          <p>Подберем оптимальную для Вас модель кондицинера</p>
+          <div class="icon-bg">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="md-36 text-primary"
+              >phone_enabled</mat-icon
+            >
+          </div>
+          <h3 class="mt-4 mb-3 h4">Звонок</h3>
+          <p class="text-secondary">
+            Подберем оптимальную для Вас модель кондиционера.
+          </p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48"
-            >local_shipping</mat-icon
-          >
-          <h4 class="mt-4 mb-3">Доставка</h4>
-          <p>Бесплатная доставка по Николаеву</p>
+          <div class="icon-bg">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="md-36 text-primary"
+              >local_shipping</mat-icon
+            >
+          </div>
+          <h3 class="mt-4 mb-3 h4">Доставка</h3>
+          <p class="text-secondary">Бесплатная доставка по Николаеву.</p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48"
-            >build</mat-icon
-          >
-          <h4 class="mt-4 mb-3">Установка</h4>
-          <p>Устанавливаем кондиционер под ключ за 2 часа</p>
+          <div class="icon-bg">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="md-36 text-primary"
+              >build</mat-icon
+            >
+          </div>
+          <h3 class="mt-4 mb-3 h4">Установка</h3>
+          <p class="text-secondary">
+            Устанавливаем кондиционер под ключ за 2 часа.
+          </p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-48"
-            >credit_card</mat-icon
-          >
+          <div class="icon-bg">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="md-36 text-primary"
+              >credit_card</mat-icon
+            >
+          </div>
           <h4 class="mt-4 mb-3">Оплата</h4>
-          <p>Оплата производится по факту окончания установки</p>
+          <p class="text-secondary">
+            Оплата производится по факту окончания установки.
+          </p>
         </li>
       </ol>
-    </div>
-  </section>
-  <section class="container mt-5 pt-5">
-    <h1 class="text-center">О нас</h1>
-    <ul>
-      <li class="row align-items-center mt-5">
+
+      <div class="row align-items-center mt-5">
         <div class="col-lg-6">
-          <h3 class="mb-3">Только профессионалы</h3>
-          <p>
-            Все сотрудники проходят чательный отбор и подготовку.
+          <h2 class="mb-3">
+            Более 15 лет опыта работы с
+            <span class="text-primary">кондиционерами </span>
+          </h2>
+          <p class="text-secondary lead">
+            Наша компания, успешно работает на рынке обслуживания кондиционеров
+            в городе Николаев, уже более 15 лет.
           </p>
+          <ul class="d-flex flex-wrap mt-3">
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">1000+</p>
+              <p class="text-secondary">Установленных <br />кондиционеров</p>
+            </li>
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">1500+</p>
+              <p class="text-secondary">Профилактик <br />кондиционеров</p>
+            </li>
+            <li class="text-center pr-4">
+              <p class="text-primary h2 font-weight-light">2000+</p>
+              <p class="text-secondary">Довольных <br />клиентов</p>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center order-first">
           <img
             src="../assets/img/undraw_QA_engineers_dg5p.svg"
             width="70%"
@@ -123,269 +134,470 @@
             alt=""
           />
         </div>
-      </li>
-      <li class="row align-items-center mt-5">
-        <div class="col-lg-6 text-center">
-          <img
-            src="../assets/img/undraw_house_searching_n8mp.svg"
-            width="70%"
-            height="auto"
-            alt=""
-          />
-        </div>
-        <div class="col-lg-6 mt-3 order-first order-lg-12">
-          <h3 class="mb-3">Заботимся о вашем комфорте</h3>
-          <p>
-            Используем самые инновационные и провереные решения на рынке бытовой
-            техники.
-          </p>
-        </div>
-      </li>
-      <li class="row align-items-center mt-5">
-        <div class="col-lg-6">
-          <h3 class="mb-3">Гениальность в деталях</h3>
-          <p>
-            Проявляем внимание к каждой мелочи.
-          </p>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img
-            src="../assets/img/undraw_building_blocks_n0nc.svg"
-            width="70%"
-            height="auto"
-            alt=""
-          />
-        </div>
-      </li>
-    </ul>
+      </div>
+      <!-- <li class="row align-items-center mt-5">
+          <div class="col-lg-6 text-center">
+            <img
+              src="../assets/img/undraw_house_searching_n8mp.svg"
+              width="70%"
+              height="auto"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 mt-3 order-first order-lg-12">
+            <h3 class="mb-3">Заботимся о вашем комфорте</h3>
+            <p>
+              Используем самые инновационные и провереные решения на рынке
+              бытовой техники.
+            </p>
+          </div>
+        </li> -->
+      <!-- <li class="row align-items-center mt-5">
+          <div class="col-lg-6">
+            <h3 class="mb-3">Гениальность в деталях</h3>
+            <p>Проявляем внимание к каждой мелочи.</p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              src="../assets/img/undraw_building_blocks_n0nc.svg"
+              width="70%"
+              height="auto"
+              alt=""
+            />
+          </div>
+        </li> -->
+    </div>
   </section>
-  <section class="mt-5 pb-5">
-    <hr />
+  <section class="container">
+    <h2 class="mt-5 text-center">Что Вам необходимо?</h2>
+    <p class="text-secondary lead text-center">
+      Выберете наиболее подходящую для Вас услугу и получите полную консультацию
+      бесплатно.
+    </p>
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mt-4">
+        <mat-card class="h-100"
+          ><h3 class="h4">Купить кондиционер</h3>
+          <p class="text-secondary">
+            У нас Вы можете купить кондиционер любого бренда с официальной
+            гарантией и бесплатной доставкой.
+          </p>
+          <button
+            mat-raised-button
+            [routerLink]="['/contacts']"
+            color="primary"
+          >
+            Заказать
+          </button></mat-card
+        >
+      </div>
+      <div class="col mt-4">
+        <mat-card class="h-100"
+          ><h3 class="h4">Установка кондиционера</h3>
+          <p class="text-secondary">
+            Монтаж кондиционера любого уровня сложности в Николаеве, с гарантией
+            на выполненные работы.
+          </p>
+          <button
+            mat-raised-button
+            [routerLink]="['/service/cond-install']"
+            color="primary"
+          >
+            Подробнее<mat-icon aria-hidden="false" class="ml-2">arrow_forward</mat-icon>
+          </button></mat-card
+        >
+      </div>
+      <div class="col mt-4">
+        <mat-card class="h-100"
+          ><h3 class="h4">Профилактика кондиционера</h3>
+          <p class="text-secondary">
+            Чистка кондиционера, удаление грибка с использованием
+            профессионального оборудования.
+          </p>
+          <button
+            mat-raised-button
+            [routerLink]="['/contacts']"
+            color="primary"
+          >
+            Заказать
+          </button></mat-card
+        >
+      </div>
+      <div class="col mt-4">
+        <mat-card class="h-100 d-flex flex-column"
+          ><h3 class="h4">Другие услуги</h3>
+          <p class="text-secondary">
+            Ознакомьтесь с полным списком наших услуг.
+          </p>
+          <div class="mt-auto">
+            <button
+              mat-stroked-button
+              color="primary"
+              [routerLink]="['/service']"
+            >
+              Посмотреть услуги
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-5 pb-5 bg-light">
     <div class="container pt-4">
+      <h2 class="text-center mt-5">Почему нас выбирают?</h2>
+      <p class="text-secondary lead text-center">
+        Ознакомьтесь с основными преимуществами нашей компании.
+      </p>
       <ul class="row">
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >verified_user</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Надежность</h4>
-          <p>
-            Наша компания успешно работает на рынке обслуживания
-            кондиционеров<br />
-            в городе Николаев уже <b>15 лет</b>.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            За эти годы мы набрались колоссального опыта и готовы его применять.
-          </p>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >verified_user</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Надежность</h3>
+            <p class="text-secondary">
+              Наша компания успешно работает на рынке обслуживания
+              кондиционеров<br />
+              в городе Николаев уже <b>15 лет</b>.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              За эти годы мы набрались колоссального опыта и готовы его
+              применять.
+            </p>
+          </mat-card>
         </li>
 
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >local_grocery_store</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Покупка</h4>
-          <p>
-            Купить кондиционер в Николаеве, теперь можно в
-            <b>один звонок.</b> Наши консультанты помогут Вам с выбором.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            Больше не нужно переживать за доставку, оплату, и бракованный товар
-            - мы позаботимся об этом за Вас.
-          </p>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >local_grocery_store</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Покупка</h3>
+            <p class="text-secondary">
+              Купить кондиционер в Николаеве, теперь можно в
+              <b>один звонок.</b> Наши консультанты помогут Вам с выбором.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              Больше не нужно переживать за доставку, оплату, и бракованный
+              товар - мы позаботимся об этом за Вас.
+            </p>
+          </mat-card>
         </li>
 
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >local_shipping</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Доставка</h4>
-          <p>
-            При покупке кондиционера у нас, вы получаете полностью
-            <b>бесплатную доставку</b> в подарок.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            Берем на себя полную <b>ответственность</b> за сохранность
-            кондиционера во время доставки.
-          </p>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >local_shipping</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Доставка</h3>
+            <p class="text-secondary">
+              При покупке кондиционера у нас, вы получаете полностью
+              <b>бесплатную доставку</b> в подарок.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              Берем на себя полную <b>ответственность</b> за сохранность
+              кондиционера во время доставки.
+            </p>
+          </mat-card>
         </li>
 
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >settings</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Установка</h4>
-          <p>
-            Установить кондиционер в Николаеве у нас занимает меньше чем 2 часа
-            времени под ключ.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            Монтаж кондиционера будет произведен с <b>выполнением</b> всех
-            гарантийных правил.
-          </p>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >settings</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Установка</h3>
+            <p class="text-secondary">
+              Установить кондиционер в Николаеве у нас занимает меньше чем 2
+              часа времени под ключ.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              Монтаж кондиционера будет произведен с <b>выполнением</b> всех
+              гарантийных правил.
+            </p>
+          </mat-card>
+        </li>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >spellcheck</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Гарантия</h3>
+            <p class="text-secondary">
+              Сотрудничаем только с официальными представителями
+              <b>крупнейших брендов</b> производителей кондиционеров.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              При покупке у нас, вы получаете полностью
+              <b>официальную</b> гарантию на кондиционер от производителя.
+            </p>
+          </mat-card>
         </li>
 
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >spellcheck</mat-icon
-          >
-          <h4 class="mt-3 mb-3">
-            Гарантия
-          </h4>
-          <p>
-            Сотрудничаем только с официальными представителями
-            <b>крупнейших брендов</b> производителей кондиционеров.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            При покупке у нас, вы получаете полностью
-            <b>официальную</b> гарантию на кондиционер от производителя.
-          </p>
-        </li>
-
-        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-4 pb-4">
-          <mat-icon
-            aria-hidden="false"
-            aria-label="Example home icon"
-            class="md-36  mr-2"
-            >monetization_on</mat-icon
-          >
-          <h4 class="mt-3 mb-3">Оплата</h4>
-          <p>
-            Мы заботимся о спокойствии наших клиентов, по этому принимаем
-            платежи <b>после</b> оказания услуги или продажи.
-          </p>
-          <hr class="d-block d-sm-none d-xl-block" />
-          <p>
-            По факту выполнения услуги, Вам будет предоставлен
-            <b>акт</b> выполненных работ.
-          </p>
+        <li class="col-lg-4 col-md-6 col-sm-6 col-12 pt-3 pb-3">
+          <mat-card class="h-100 text-center">
+            <div class="d-flex justify-content-center my-4">
+              <div class="icon-bg">
+                <mat-icon
+                  aria-hidden="false"
+                  aria-label="Example home icon"
+                  class="md-36 text-success"
+                  >monetization_on</mat-icon
+                >
+              </div>
+            </div>
+            <h3 class="mb-0 h4 mb-3">Оплата</h3>
+            <p class="text-secondary">
+              Мы заботимся о спокойствии наших клиентов, по этому принимаем
+              платежи <b>после</b> оказания услуги или продажи.
+            </p>
+            <hr class="d-block d-sm-none d-xl-block" />
+            <p class="text-secondary mb-2">
+              По факту выполнения услуги, Вам будет предоставлен
+              <b>акт</b> выполненных работ.
+            </p>
+          </mat-card>
         </li>
       </ul>
     </div>
   </section>
-  <section class="mb-4">
-    <hr />
-    <div class="d-flex flex-wrap">
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/ch.svg"
-          alt="Кондиционер Cooper Hunter купить в Николаеве"
-          style="width: 80%; height: auto;"
-          class="main-brands-logo"
-        />
+  <section class="container my-5">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col d-flex align-items-center">
+        <div>
+          <h2>
+            Все наши сотрудники, <br class="d-none d-lg-inline-block" />
+            <div class="text-success">специалисты высшего класса</div>
+          </h2>
+          <p class="text-secondary lead">
+            Мы очень тщательно подбираем людей к себе в команду, каждый наш
+            сотрудник это мастер с многолетним опытом.
+          </p>
+        </div>
       </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/lg.svg"
-          alt="Кондиционер LG купить в Николаеве"
-          style="width: 60%; height: auto;"
-          class="main-brands-logo"
-        />
+      <div class="col">
+        <div class="row row-cols-3">
+          <div class="col">
+            <img
+              class="team-icon"
+              src="../assets/img/team/roman.jpg"
+              alt="Роман Валерьевич"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2 team-title">Роман</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Главный инженер</p> -->
+          </div>
+          <div class="col">
+            <img
+              class="team-icon"
+              src="../assets/img/team/sasha.jpg"
+              alt="Александр Александрович"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2">Александр</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Старший мастер</p> -->
+          </div>
+          <div class="col">
+            <img
+              class="team-icon"
+              src="../assets/img/team/youra.jpg"
+              alt="Юрий Юрьевич"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2">Юрий</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Глава сервисной группы</p> -->
+          </div>
+          <div class="col mt-4">
+            <img
+              class="team-icon"
+              src="../assets/img/team/oleg.jpg"
+              alt="Олег Николаевич"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2">Олег</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Зам главного инженера</p> -->
+          </div>
+          <div class="col mt-4">
+            <img
+              class="team-icon"
+              src="../assets/img/team/olegK.jpg"
+              alt="Олег"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2">Юрий</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Глава сервисной группы</p> -->
+          </div>
+          <div class="col mt-4">
+            <img
+              class="team-icon"
+              src="../assets/img/team/alex.jpg"
+              alt="Александр Романович"
+            />
+            <!-- <div class="card-head text-center">
+                <h5 class="pt-2 pb-2">Юрий</h5>
+              </div>
+              <hr />
+              <p class="text-center text-secondary">Глава сервисной группы</p> -->
+          </div>
+        </div>
       </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/gree.svg"
-          alt="Кондиционер Gree купить в Николаеве"
-          style="width: 60%; height: auto;"
-          class="main-brands-logo"
-        />
-      </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/samsung.svg"
-          alt="Кондиционер Samsung купить в Николаеве"
-          style="width: 60%; height: auto;"
-          class="main-brands-logo"
-        />
-      </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/daikin.svg"
-          alt="Кондиционер Daikin купить в Николаеве"
-          style="width: 60%; height: auto;"
-          class="main-brands-logo"
-        />
-      </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/tcl.svg"
-          alt="Кондиционер TCL купить в Николаеве"
-          style="width: 50%; height: auto;"
-          class="main-brands-logo"
-        />
-      </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/mitsu.svg"
-          alt="Кондиционер Mitsubishi купить в Николаеве"
-          style="width: 50%; height: auto;"
-          class="main-brands-logo"
-        />
-      </div>
-      <div
-        class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
-      >
-        <img
-          src="../assets/img/brand_logo/midea.svg"
-          alt="Кондиционер Midea купить в Николаеве"
-          style="width: 50%; height: auto;"
-          class="main-brands-logo"
-        />
+    </div>
+  </section>
+  <section class="bg-light">
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col">
+          <h2>Работаем с лучшими</h2>
+          <p class="main-logo-desc text-secondary">
+            Работаем только с самыми популярными и проверенными брендами
+            кондиционеров.
+          </p>
+          <button
+            mat-stroked-button
+            color="primary"
+            class="main-btn"
+            [routerLink]="['/service']"
+          >
+            Узнать больше
+          </button>
+        </div>
+        <div class="col order-12 order-lg-first">
+          <div class="d-flex flex-wrap">
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/ch.svg"
+                alt="Кондиционер Cooper Hunter купить в Николаеве"
+                style="width: 80%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/lg.svg"
+                alt="Кондиционер LG купить в Николаеве"
+                style="width: 60%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/gree.svg"
+                alt="Кондиционер Gree купить в Николаеве"
+                style="width: 60%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/samsung.svg"
+                alt="Кондиционер Samsung купить в Николаеве"
+                style="width: 60%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/daikin.svg"
+                alt="Кондиционер Daikin купить в Николаеве"
+                style="width: 60%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/tcl.svg"
+                alt="Кондиционер TCL купить в Николаеве"
+                style="width: 50%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/mitsu.svg"
+                alt="Кондиционер Mitsubishi купить в Николаеве"
+                style="width: 50%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+            <div
+              class="col-lg-3 col-md-3 col-sm-3 col-6 pt-4 pb-4 text-center d-flex align-items-center justify-content-center"
+            >
+              <img
+                src="../assets/img/brand_logo/midea.svg"
+                alt="Кондиционер Midea купить в Николаеве"
+                style="width: 50%; height: auto"
+                class="main-brands-logo"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </main>
-<footer class="bg-dark">
-  <div class="container text-white pt-3 pb-2">
-    <div class="d-flex justify-content-around flex-wrap">
-      <p>Профессионал Юг 2020</p>
-      <h5>
-        <a href="mailto:profug8@gmail.com" class="text-white col-12"
-          >profug8@gmail.com</a
-        >
-      </h5>
-      <h5>
-        <a href="tel:+380677682273" class="text-white col-12"
-          >+38 067 768 22 73</a
-        >
-      </h5>
-      <h5>
-        <a href="tel:+380638181297" class="text-white col-12"
-          >+38 063 81 81 297</a
-        >
-      </h5>
-    </div>
-  </div>
-</footer>
+<app-footer></app-footer>

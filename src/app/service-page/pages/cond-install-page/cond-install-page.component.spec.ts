@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ServicePageComponent } from './service-page.component';
+import { CondInstallPageComponent } from './cond-install-page.component';
 
-describe('ServicePageComponent', () => {
-  let component: ServicePageComponent;
-  let fixture: ComponentFixture<ServicePageComponent>;
+describe('CondInstallPageComponent', () => {
+  let component: CondInstallPageComponent;
+  let fixture: ComponentFixture<CondInstallPageComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ServicePageComponent ]
+      declarations: [ CondInstallPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ServicePageComponent);
+    fixture = TestBed.createComponent(CondInstallPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

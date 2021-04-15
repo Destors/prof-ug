@@ -1,8 +1,6 @@
 <section class="bg-light">
-  <div class="service-bg mb-3">
-    <h1 class="text-center text-white pt-5">Кондиционеры</h1>
-  </div>
-  <div class="container pt-5 pb-5">
+  <div class="container pt-5 pb-3">
+    <h1 class="mb-5">Кондиционеры</h1>
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
@@ -12,9 +10,7 @@
             alt="Купить кондиционер в Николаеве"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Купить кондиционер
-            </h5>
+            <h5 class="pt-2 pb-2">Купить кондиционер</h5>
           </div>
           <hr />
           <p>
@@ -35,7 +31,12 @@
               mat-raised-button
               color="primary"
               [routerLink]="['/contacts']"
-              (click)="openSnackBar('Подберем оптимальную для Вас модель кондиционера, и доставим в течении дня', 'ок')"
+              (click)="
+                openSnackBar(
+                  'Подберем оптимальную для Вас модель кондиционера, и доставим в течении дня',
+                  'ок'
+                )
+              "
             >
               Заказать
             </button>
@@ -50,14 +51,12 @@
             alt="Установка и монтаж кондиционера в Николаеве"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Установить кондиционер
-            </h5>
+            <h5 class="pt-2 pb-2">Установить кондиционер</h5>
           </div>
           <hr />
           <p>
             Установка кондиционеров любой сложности, официальная гарантия на
-            выполненые работы.
+            выполненные работы.
           </p>
           <hr />
 
@@ -66,14 +65,19 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button (click)="openDialogInstallCond()">
+            <button mat-raised-button [routerLink]="['/service/cond-install']">
               Подробнее
             </button>
             <button
               mat-raised-button
               color="primary"
               [routerLink]="['/contacts']"
-              (click)="openSnackBar('Нужно установить кондиционер? Позвоните, и мы приедем через 60 мин.', 'ок')"
+              (click)="
+                openSnackBar(
+                  'Нужно установить кондиционер? Позвоните, и мы приедем через 60 мин.',
+                  'ок'
+                )
+              "
             >
               Заказать
             </button>
@@ -88,9 +92,7 @@
             alt="Чистка кондиционера Николаев"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Чистка кондиционера
-            </h5>
+            <h5 class="pt-2 pb-2">Чистка кондиционера</h5>
           </div>
           <hr />
           <p>
@@ -110,7 +112,12 @@
               mat-raised-button
               color="primary"
               [routerLink]="['/contacts']"
-              (click)="openSnackBar('Сделаем полную профилактику кондиционера за 40 - 60 мин.', 'ок')"
+              (click)="
+                openSnackBar(
+                  'Сделаем полную профилактику кондиционера за 40 - 60 мин.',
+                  'ок'
+                )
+              "
             >
               Заказать
             </button>
@@ -122,12 +129,10 @@
           <img
             mat-card-image
             src="../assets/img/freon.jpeg"
-            alt="Запривить кондицинер в николаеве"
+            alt="Заправить кондиционер в николаеве"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Заправка фреоном
-            </h5>
+            <h5 class="pt-2 pb-2">Заправка фреоном</h5>
           </div>
           <hr />
           <p>
@@ -140,9 +145,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -161,9 +164,7 @@
             alt="Ремонт кондиционера Николаев"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Ремонт кондиционера
-            </h5>
+            <h5 class="pt-2 pb-2">Ремонт кондиционера</h5>
           </div>
           <hr />
           <p>
@@ -176,9 +177,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -194,12 +193,10 @@
           <img
             mat-card-image
             src="../assets/img/re-instal.jpg"
-            alt="Демонаж кондиционера Николаев"
+            alt="Демонтаж кондиционера Николаев"
           />
           <div class="card-head text-center">
-            <h5 class="pt-2 pb-2">
-              Демонтаж кондиционера
-            </h5>
+            <h5 class="pt-2 pb-2">Демонтаж кондиционера</h5>
           </div>
           <hr />
           <p>
@@ -212,9 +209,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -229,10 +224,8 @@
   </div>
 </section>
 <section class="bg-light pb-2">
-  <div class="service-bg mb-4">
-    <h1 class="text-center text-white">Бойлера</h1>
-  </div>
-  <div class="container pt-5 pb-4">
+  <div class="container pb-4">
+    <h1 class="mb-5">Бойлера</h1>
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
         <mat-card>
@@ -257,9 +250,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -293,9 +284,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -329,9 +318,7 @@
           </mat-card-content>
 
           <div class="d-flex justify-content-between">
-            <button mat-raised-button disabled>
-              Подробнее
-            </button>
+            <button mat-raised-button disabled>Подробнее</button>
             <button
               mat-raised-button
               color="primary"
@@ -345,22 +332,5 @@
     </div>
   </div>
 </section>
-<footer class="bg-dark">
-  <div class="container text-white pt-3 pb-2">
-    <div class="d-flex justify-content-around flex-wrap">
-      <p>Профессионал Юг 2020</p>
-      <h5>prof-ug8@gmail.com</h5>
-      <h5>
-        <a href="tel+38 067 81 81 297" class="text-white col-12"
-          >+38 067 81 81 297</a
-        >
-      </h5>
-      <h5>
-        <a href="tel+380638181297" class="text-white col-12"
-          >+38 063 81 81 297</a
-        >
-      </h5>
-    </div>
-  </div>
-</footer>
+<app-footer></app-footer>
 <router-outlet></router-outlet>
