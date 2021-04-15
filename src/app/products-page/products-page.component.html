@@ -123,3 +123,45 @@
     </ul>
   </div>
 </section>
+<section>
+  <div class="container pb-5">
+    <h2 class="mt-5 mb-4">Самые популярные модели</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+      <div class="col">
+        <mat-card>
+          <div class="div">
+            <img
+              mat-card-image
+              src="../assets/img/products/cooperandhunter-ch-s09xn7.jpg"
+              alt="Купить кондиционер в Николаеве"
+              width="350"
+              height="230"
+              class="img-fluid"
+            />
+          </div>
+          <div class="card-head">
+            <h5 class="pt-2 pb-2">
+              Кондиционер COOPER&HUNTER PRIMA PLUS CH-S09XN7
+            </h5>
+          </div>
+          <hr />
+          <mat-card-content class="text-success">
+            <h4>9 450 <small>₴</small></h4>
+            <p class="text-secondary">Точную цену уточняйте по телефону</p>
+          </mat-card-content>
+
+          <div class="d-flex justify-content-between">
+            <button mat-raised-button>Подробнее</button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
