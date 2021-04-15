@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CondInstallPageComponent } from './cond-install-page.component';
 
@@ -6,7 +6,7 @@ describe('CondInstallPageComponent', () => {
   let component: CondInstallPageComponent;
   let fixture: ComponentFixture<CondInstallPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CondInstallPageComponent ]
     })
