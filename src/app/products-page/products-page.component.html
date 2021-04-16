@@ -74,14 +74,60 @@
               class="img-fluid"
             />
           </div>
-          <div class="card-head">
+          <hr />
+          <mat-card-content class="mt-auto">
             <h5 class="pt-2 pb-2" style="font-size: 1.2rem">
               Кондиционер COOPER&HUNTER PRIMA PLUS CH-S09XN7
             </h5>
-          </div>
-          <hr />
-          <mat-card-content>
             <h3 class="text-success">326 <small>$</small></h3>
+            <p class="text-secondary">Точную цену уточняйте по телефону</p>
+            <hr />
+            <div class="d-flex align-items-center mb-2 text-success">
+              <mat-icon class="mr-2">local_shipping</mat-icon>
+              <p class="text-success mb-0">Бесплатная доставка по Николаеву</p>
+            </div>
+            <div class="d-flex align-items-center mb-2 text-success">
+              <mat-icon class="mr-2">sell</mat-icon>
+              <p class="mb-0">Скидка на установку Кондиционера</p>
+            </div>
+            <div class="d-flex align-items-center mb-2 text-success">
+              <mat-icon class="mr-2">verified_user</mat-icon>
+              <p class="text-success mb-0">Гарантия от производителя</p>
+            </div>
+            <div class="d-flex align-items-center mb-2 text-success">
+              <mat-icon class="mr-2">shopping_cart</mat-icon>
+              <p class="text-success mb-0">Оплата при получении</p>
+            </div>
+          </mat-card-content>
+          <!-- <div class="d-flex justify-content-between">
+            <button mat-raised-button>Подробнее</button>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/contacts']"
+            >
+              Заказать
+            </button>
+          </div> -->
+        </mat-card>
+      </div>
+      <div class="col mb-4">
+        <mat-card class="product-card" [routerLink]="['/contacts']">
+          <div class="div">
+            <img
+              mat-card-image
+              src="../assets/img/products/tcl_tac-09chsd_xab1_ihb_heat_pump_inverter_r32_wi-fi.jpg"
+              alt="Купить кондиционер в Николаеве"
+              width="350"
+              height="230"
+              class="img-fluid"
+            />
+          </div>
+          <mat-card-content class="mt-auto">
+            <h5 class="pt-2 pb-2" style="font-size: 1.2rem">
+              Кондиционер TCL TAC-09CHSD/XAB1
+            </h5>
+            <h3 class="text-success">495 <small>$</small></h3>
             <p class="text-secondary">Точную цену уточняйте по телефону</p>
             <hr />
             <div class="d-flex align-items-center mb-2 text-success">
