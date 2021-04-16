@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
-import { Injectable, Inject } from "@angular/core";
+import { Inject } from "@angular/core";
 
 export interface PeriodicElement {
   name: string;
