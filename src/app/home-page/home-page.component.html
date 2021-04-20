@@ -243,7 +243,102 @@
 
   <section class="py-5">
     <div class="container">
-      <h3 class="mb-4">Популярные кондиционеры</h3>
+      <h3 class="mb-4 mt-4">Популярные услуги</h3>
+      <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 mx-0">
+        <div class="col mb-4 px-1">
+          <mat-card
+            class="product-card product-card--active"
+            [routerLink]="['/service']"
+          >
+            <div class="div">
+              <img
+                mat-card-image
+                src="../assets/img/buy.jpg"
+                alt="Купить кондиционер в Николаеве"
+                width="350"
+                height="230"
+                class="img-fluid"
+              />
+            </div>
+            <mat-card-content class="mt-auto">
+              <h5 class="pt-2 pb-2" style="font-size: medium">
+                Консультация и подбор кондиционера
+              </h5>
+              <h5 class="text-success">Бесплатно</h5>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col mb-4 px-1">
+          <mat-card
+            class="product-card product-card--active"
+            [routerLink]="['/service']"
+          >
+            <div class="div">
+              <img
+                mat-card-image
+                src="../assets/img/install.jpg"
+                alt="Установка и монтаж кондиционера в Николаеве"
+                width="350"
+                height="230"
+                class="img-fluid"
+              />
+            </div>
+            <mat-card-content class="mt-auto">
+              <h5 class="pt-2 pb-2" style="font-size: medium">
+                Монтаж кондиционера
+              </h5>
+              <h5 class="text-success">от 1200 грн</h5>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col mb-4 px-1">
+          <mat-card
+            class="product-card product-card--active"
+            [routerLink]="['/service']"
+          >
+            <div class="div">
+              <img
+                mat-card-image
+                src="../assets/img/clean.jpg"
+                alt="Профилактика кондиционера кондиционера в Николаеве"
+                width="350"
+                height="230"
+                class="img-fluid"
+              />
+            </div>
+            <mat-card-content class="mt-auto">
+              <h5 class="pt-2 pb-2" style="font-size: medium">
+                Профилактика кондиционера
+              </h5>
+              <h5 class="text-success">от 450 грн</h5>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col mb-4 px-1">
+          <mat-card
+            class="product-card product-card--active"
+            [routerLink]="['/service']"
+          >
+            <div class="div">
+              <img
+                mat-card-image
+                src="../assets/img/re-instal.jpg"
+                alt="Демонтаж кондиционера Николаев"
+                width="350"
+                height="230"
+                class="img-fluid"
+              />
+            </div>
+            <mat-card-content class="mt-auto">
+              <h5 class="pt-2 pb-2" style="font-size: medium">
+                Демонтаж кондиционера
+              </h5>
+              <h5 class="text-success">от 600 грн</h5>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <h3 class="mb-4 mt-3">Популярные кондиционеры</h3>
       <div class="row row-cols-2 row-cols-md-2 row-cols-lg-5 mx-0">
         <div class="col mb-4 px-1">
           <mat-card
@@ -361,99 +456,35 @@
           </mat-card>
         </div>
       </div>
-      <h3 class="mb-4 mt-4">Популярные услуги</h3>
-      <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 mx-0">
-        <div class="col mb-4 px-1">
-          <mat-card
-            class="product-card product-card--active"
-            [routerLink]="['/service']"
-          >
-            <div class="div">
+
+      <div class="d-flex justify-content-center">
+        <div
+          class="col-12 col-md-8 bg-primary py-5 text-white mt-5"
+          style="border-radius: 15px"
+        >
+          <div class="row mx-0 row-cols-1 row-cols-lg-2">
+            <div class="col">
+              <h2>Как заказать наши услуги?</h2>
+              <p class="lead">
+                Для оформления заказа, Вам необходимо связаться с нами по любому
+                из доступных номеров телефона.
+              </p>
+              <button
+                mat-raised-button
+                class="text-primary main-btn py-1 px-3"
+                [routerLink]="['/contacts']"
+              >
+                Контакты
+              </button>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
               <img
-                mat-card-image
-                src="../assets/img/buy.jpg"
-                alt="Купить кондиционер в Николаеве"
-                width="350"
-                height="230"
-                class="img-fluid"
+                src="../assets/img/undraw_empty_cart_co35.svg"
+                alt="Кондиционер Cooper Hunter купить в Николаеве"
+                style="width: 80%; height: auto"
               />
             </div>
-            <mat-card-content class="mt-auto">
-              <h5 class="pt-2 pb-2" style="font-size: medium">
-                Консультация и подбор кондиционера
-              </h5>
-              <h5 class="text-success">Бесплатно</h5>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="col mb-4 px-1">
-          <mat-card
-            class="product-card product-card--active"
-            [routerLink]="['/service']"
-          >
-            <div class="div">
-              <img
-                mat-card-image
-                src="../assets/img/install.jpg"
-                alt="Установка и монтаж кондиционера в Николаеве"
-                width="350"
-                height="230"
-                class="img-fluid"
-              />
-            </div>
-            <mat-card-content class="mt-auto">
-              <h5 class="pt-2 pb-2" style="font-size: medium">
-                Монтаж кондиционера
-              </h5>
-              <h5 class="text-success">от 1200 грн</h5>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="col mb-4 px-1">
-          <mat-card
-            class="product-card product-card--active"
-            [routerLink]="['/service']"
-          >
-            <div class="div">
-              <img
-                mat-card-image
-                src="../assets/img/clean.jpg"
-                alt="Профилактика кондиционера кондиционера в Николаеве"
-                width="350"
-                height="230"
-                class="img-fluid"
-              />
-            </div>
-            <mat-card-content class="mt-auto">
-              <h5 class="pt-2 pb-2" style="font-size: medium">
-                Профилактика кондиционера
-              </h5>
-              <h5 class="text-success">от 450 грн</h5>
-            </mat-card-content>
-          </mat-card>
-        </div>
-        <div class="col mb-4 px-1">
-          <mat-card
-            class="product-card product-card--active"
-            [routerLink]="['/service']"
-          >
-            <div class="div">
-              <img
-                mat-card-image
-                src="../assets/img/re-instal.jpg"
-                alt="Демонтаж кондиционера Николаев"
-                width="350"
-                height="230"
-                class="img-fluid"
-              />
-            </div>
-            <mat-card-content class="mt-auto">
-              <h5 class="pt-2 pb-2" style="font-size: medium">
-                Демонтаж кондиционера
-              </h5>
-              <h5 class="text-success">от 600 грн</h5>
-            </mat-card-content>
-          </mat-card>
+          </div>
         </div>
       </div>
     </div>
