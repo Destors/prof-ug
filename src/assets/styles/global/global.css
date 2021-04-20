@@ -67,3 +67,9 @@ ul {
 .lead {
   font-weight: 400 !important;
 }
+
+mat-card.product-card {
+  min-height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+}
