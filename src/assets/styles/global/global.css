@@ -73,3 +73,11 @@ mat-card.product-card {
   display: flex !important;
   flex-direction: column !important;
 }
+
+mat-card.product-card--active {
+  cursor: pointer;
+}
+
+mat-card.product-card--active :hover {
+  opacity: 0.8;
+}
