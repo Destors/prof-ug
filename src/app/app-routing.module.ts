@@ -14,28 +14,35 @@ const routes: Routes = [
         path: "service",
         loadChildren: () =>
           import("./service-page/service-page.module").then(
-            m => m.ServicePageModule
-          )
+            (m) => m.ServicePageModule
+          ),
+      },
+      {
+        path: "products",
+        loadChildren: () =>
+          import("./products-page/products-page.module").then(
+            (m) => m.ProductsPageModule
+          ),
       },
       {
         path: "contacts",
         loadChildren: () =>
           import("./contacts-page/contacts-page.module").then(
-            m => m.ContactsPageModule
-          )
-      }
-    ]
-  }
+            (m) => m.ContactsPageModule
+          ),
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules,
-    initialNavigation: "enabled",
-    relativeLinkResolution: 'legacy'
-})
+      preloadingStrategy: PreloadAllModules,
+      initialNavigation: "enabled",
+      relativeLinkResolution: "legacy",
+    }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

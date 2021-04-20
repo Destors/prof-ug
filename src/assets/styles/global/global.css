@@ -58,3 +58,12 @@ ul {
 .navbar {
   border-bottom: 1px solid lightgray;
 }
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.lead {
+  font-weight: 400 !important;
+}

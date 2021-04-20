@@ -8,10 +8,8 @@
         ><button mat-button disabled>Установка кондиционеров</button>
       </div>
       <div class="pt-2">
-        <h1 class="mb-2">
-          Помогаем установить кондиционер в Николаеве на высшем уровне
-        </h1>
-        <p class="lead mb-5 text-secondary">
+        <h1 class="mb-4">Необходимо установить кондиционер? Звоните</h1>
+        <p class="lead mb-5">
           Наша компания оказывает услуги по высококвалифицированной установке
           кондиционеров, в квартирах, частных домах и офисах. Осуществляем весь
           спектр услуг по обслуживанию климатической техники.
@@ -140,8 +138,9 @@
     </section>
   </div>
 </div>
-<div class="container">
-  <section class="py-5">
+
+<section class="py-5">
+  <div class="container">
     <h2>Как выполняется монтаж кондиционера</h2>
     <p class="lead text-secondary">
       Грамотная установка кондиционера - это комплекс ответственных мероприятий,
@@ -210,7 +209,7 @@
           </ul>
         </div>
       </mat-tab>
-      <mat-tab label="Список работ"
+      <mat-tab label="Список работ и стоимость"
         ><div class="container py-3">
           <table mat-table [dataSource]="dataSource" class="mat-elevation-z5">
             <!--- Note that these columns can be defined in any order.
@@ -235,5 +234,49 @@
       ></mat-tab>
       <!-- <mat-tab label="Материалы">Материалы</mat-tab> -->
     </mat-tab-group>
-  </section>
-</div>
+    <div class="d-flex justify-content-center">
+      <div
+        class="col-12 col-md-8 bg-primary py-5 text-white my-5"
+        style="border-radius: 15px"
+      >
+        <div class="row mx-0 row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <h2>Как заказать монтаж кондиционера?</h2>
+            <p class="lead">
+              Для оформления заказа на установку кондиционера, Вам необходимо
+              связаться с нами по любому из доступных номеров телефона.
+            </p>
+            <button
+              mat-raised-button
+              class="text-primary main-btn py-1 px-3"
+              [routerLink]="['/contacts']"
+            >
+              Контакты
+            </button>
+          </div>
+          <div class="col d-flex align-items-center justify-content-center">
+            <img
+              src="../assets/img/undraw_empty_cart_co35.svg"
+              alt="Кондиционер Cooper Hunter купить в Николаеве"
+              style="width: 80%; height: auto"
+              class="main-brands-logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section>
+  <div class="container">
+    <h2>Стоимость установки кондиционера</h2>
+    <p class="lead">
+      Полная стоимость установки зависит от многих факторов. Начиная от мощности
+      кондиционера, заканчивая местом установки и длинной трассы.
+    </p>
+    <div class="row row-cols-1 row-cols-md-2 mt-5">
+      <div class="col"><h3>Как узнать стоимость установки?</h3><p>Для того что бы точно посчитать стоимость монтажа кондиционера, необходимо вызвать мастера на дом, для замеров и расчетов.</p></div>
+    </div>
+  </div>
+</section> -->
+<app-footer></app-footer>

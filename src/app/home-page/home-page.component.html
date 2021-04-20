@@ -10,8 +10,8 @@
               Продажа, установка, обслуживание
               <span class="text-primary">кондиционеров</span>
             </h1>
-            <p class="lead text-secondary mb-0">
-              Можем установить кондиционер любой сложности,
+            <p class="lead mb-0">
+              Полный спектр услуг кондиционирования,
               <br class="d-none d-lg-inline-block" />
               с гарантией на выполненные работы в городе Николаев.
             </p>
@@ -55,9 +55,7 @@
             >
           </div>
           <h3 class="mt-4 mb-3 h4">Звонок</h3>
-          <p class="text-secondary">
-            Подберем оптимальную для Вас модель кондиционера.
-          </p>
+          <p>Подберем оптимальную для Вас модель кондиционера.</p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
           <div class="icon-bg">
@@ -69,7 +67,7 @@
             >
           </div>
           <h3 class="mt-4 mb-3 h4">Доставка</h3>
-          <p class="text-secondary">Бесплатная доставка по Николаеву.</p>
+          <p>Бесплатная доставка по Николаеву.</p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
           <div class="icon-bg">
@@ -81,9 +79,7 @@
             >
           </div>
           <h3 class="mt-4 mb-3 h4">Установка</h3>
-          <p class="text-secondary">
-            Устанавливаем кондиционер под ключ за 2 часа.
-          </p>
+          <p>Устанавливаем кондиционер под ключ за 2 часа.</p>
         </li>
         <li class="col-lg-3 col-md-6 col-sm-6 col-12 pt-5 pb-5">
           <div class="icon-bg">
@@ -95,9 +91,7 @@
             >
           </div>
           <h4 class="mt-4 mb-3">Оплата</h4>
-          <p class="text-secondary">
-            Оплата производится по факту окончания установки.
-          </p>
+          <p>Оплата производится по факту окончания установки.</p>
         </li>
       </ol>
 
@@ -107,22 +101,22 @@
             Более 15 лет опыта работы с
             <span class="text-primary">кондиционерами </span>
           </h2>
-          <p class="text-secondary lead">
+          <p class="lead">
             Наша компания, успешно работает на рынке обслуживания кондиционеров
             в городе Николаев, уже более 15 лет.
           </p>
           <ul class="d-flex flex-wrap mt-3">
             <li class="text-center pr-4">
               <p class="text-primary h2 font-weight-light">1000+</p>
-              <p class="text-secondary">Установленных <br />кондиционеров</p>
+              <p>Установленных <br />кондиционеров</p>
             </li>
             <li class="text-center pr-4">
               <p class="text-primary h2 font-weight-light">1500+</p>
-              <p class="text-secondary">Профилактик <br />кондиционеров</p>
+              <p>Профилактик <br />кондиционеров</p>
             </li>
             <li class="text-center pr-4">
               <p class="text-primary h2 font-weight-light">2000+</p>
-              <p class="text-secondary">Довольных <br />клиентов</p>
+              <p>Довольных <br />клиентов</p>
             </li>
           </ul>
         </div>
@@ -184,10 +178,12 @@
           </p>
           <button
             mat-raised-button
-            [routerLink]="['/contacts']"
+            [routerLink]="['/products']"
             color="primary"
           >
-            Заказать
+            Товары<mat-icon aria-hidden="false" class="ml-2"
+              >arrow_forward</mat-icon
+            >
           </button></mat-card
         >
       </div>
@@ -203,7 +199,9 @@
             [routerLink]="['/service/cond-install']"
             color="primary"
           >
-            Подробнее<mat-icon aria-hidden="false" class="ml-2">arrow_forward</mat-icon>
+            Подробнее<mat-icon aria-hidden="false" class="ml-2"
+              >arrow_forward</mat-icon
+            >
           </button></mat-card
         >
       </div>
@@ -498,8 +496,8 @@
     <div class="container py-5">
       <div class="row row-cols-1 row-cols-lg-2">
         <div class="col">
-          <h2>Работаем с лучшими</h2>
-          <p class="main-logo-desc text-secondary">
+          <h2>Официальный поставщик</h2>
+          <p class="lead">
             Работаем только с самыми популярными и проверенными брендами
             кондиционеров.
           </p>
@@ -507,9 +505,9 @@
             mat-stroked-button
             color="primary"
             class="main-btn"
-            [routerLink]="['/service']"
+            [routerLink]="['/products']"
           >
-            Узнать больше
+            Популярные модели
           </button>
         </div>
         <div class="col order-12 order-lg-first">
