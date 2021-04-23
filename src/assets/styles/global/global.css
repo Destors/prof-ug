@@ -81,3 +81,12 @@ mat-card.product-card--active {
 mat-card.product-card--active :hover {
   opacity: 0.8;
 }
+
+.bg-success-gradient {
+  background-image: linear-gradient(
+    135deg,
+    rgb(0, 171, 85) 0%,
+    rgb(0, 123, 85) 100%
+  );
+  background-color: rgb(0, 123, 85);
+}
