@@ -67,3 +67,26 @@ ul {
 .lead {
   font-weight: 400 !important;
 }
+
+mat-card.product-card {
+  min-height: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+mat-card.product-card--active {
+  cursor: pointer;
+}
+
+mat-card.product-card--active :hover {
+  opacity: 0.8;
+}
+
+.bg-success-gradient {
+  background-image: linear-gradient(
+    135deg,
+    rgb(0, 171, 85) 0%,
+    rgb(0, 123, 85) 100%
+  );
+  background-color: rgb(0, 123, 85);
+}
